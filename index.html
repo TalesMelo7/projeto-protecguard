@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtecGuard</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header class="cabecalho-principal">
+        <div class="container">
+            <div class="logo-empresa">
+                <img src="images/logo.png" alt="Imagem do Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#alarmes">Alarmes</a></li>
+                    <li><a href="#cameras">Câmeras</a></li>
+                    <li><a href="#sistemas">Sistemas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="divisor-diagonal"></div>
+    </header>
+    <section id="inicio">
+        <div class="fundo">
+            <div class="texto-boas-vindas">
+                <h2>JÁ PENSOU EM TER A MELHOR PORTARIA REMOTA DO BRASIL?</h2>
+            </div>
+            <div class="formulario-orcamento">
+                <h2>Solicite um Orçamento</h2>
+                <form>
+                    <label for="nome-orcamento">Nome:</label>
+                    <input type="text" id="nome-orcamento" name="nome-orcamento" required>
+                    
+                    <label for="email-orcamento">E-mail:</label>
+                    <input type="email" id="email-orcamento" name="email-orcamento" required>
+                    
+                    <label for="telefone-orcamento">Telefone:</label>
+                    <input type="tel" id="telefone-orcamento" name="telefone-orcamento" required>
+                    
+                    <label for="solucao-desejada">Solução desejada:</label>
+                    <select id="solucao-desejada" name="solucao-desejada" required>
+                        <option value="">Selecione uma solução</option>
+                        <option value="alarmes">Alarmes</option>
+                        <option value="cameras">Câmeras</option>
+                        <option value="sistemas">Sistemas de Segurança</option>
+                        <option value="portaria">Portaria Remota</option>
+                    </select>
+                    
+                    <label for="cpf-cnpj">CPF ou CNPJ:</label>
+                    <input type="text" id="cpf-cnpj" name="cpf-cnpj" required>
+                    
+                    <button type="submit">Solicitar Orçamento</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div id="divisor"></div>   
+    <section id="alarmes">
+        <div class="fundo">
+            <div class="container">
+                <h2>Alarmes</h2>
+                <div class="conteudo-alarmes">
+                    <img src="images/alarme.jpg" alt="Imagem do Alarme">
+                    <p>Nossos alarmes são projetados para detectar intrusões e alertá-lo imediatamente. Com tecnologia de ponta, garantimos a máxima segurança e confiabilidade. Os sistemas de alarme da ProtecGuard oferecem proteção abrangente e são ideais para residências e empresas, proporcionando tranquilidade e segurança para você e sua família.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="divisor2"></div>
+    <section id="cameras">
+        <div class="fundo">
+            <div class="container">
+                <h2>Câmeras</h2>
+                <div class="conteudo-cameras">
+                    <p>Nossas câmeras de segurança são equipadas com a mais alta tecnologia, oferecendo imagens de alta definição e recursos avançados como visão noturna e detecção de movimento. Seja para residências ou empresas, nossas câmeras garantem a máxima proteção e monitoramento contínuo.</p>
+                    <div class="caixa-imagem-camera">
+                        <img src="images/camera.jpg" alt="Imagem de Câmera">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <div id="divisor3"></div>
+
+    <section id="sistemas">
+        <div class="fundo">
+            <div class="container">
+                <h2>Sistemas</h2>
+                <div class="conteudo-sistemas">
+                    <div class="caixa-imagem-sistema">
+                        <img src="images/minha-imagem-sistemas.jpg" alt="Sistemas de segurança">
+                    </div>
+                    <p>Na ProtecGuard, oferecemos sistemas de segurança de última geração, projetados para fornecer a máxima proteção para sua residência ou empresa. Nossos sistemas são desenvolvidos com a mais alta tecnologia, garantindo segurança, confiabilidade e eficiência em todas as situações.</p>
+                </div>
+            </div>
+        </div>
+    </section>      
+    <div id="divisor4"></div>
+    <section id="contato">
+        <div class="container-contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações sobre nossos serviços.</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section> 
+    <footer>
+        <div class="conteudo-rodape">
+            <div class="formulario-contato-container">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco para mais informações sobre nossos serviços.</p>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <img src="images/logo.png" alt="Logo ProtecGuard" class="logo-rodape">
+        </div>
+        <div class="rodape-inferior">
+            <p>&copy; 2024 ProtecGuard. Todos os direitos reservados.</p>
+        </div>
+    </footer> 
+</html>

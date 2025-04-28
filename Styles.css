@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Garante que não haja rolamento horizontal */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 2200px;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.cabecalho-principal {
+    background: linear-gradient(to right, #000, #1E90FF);
+    padding: 0px 0; /* Ajusta o padding */
+    position: relative;
+    width: 100%; /* Garante que a largura do cabeçalho não exceda a viewport */
+}
+
+.cabecalho-principal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Garante que a largura do container não exceda a viewport */
+}
+
+.divisor-diagonal {
+    margin-left: 1150px;
+    width: 100%; /* Garante que a largura do divisor não exceda a viewport */
+    height: 2px;
+    background-color: #1E90FF;
+    position: static;
+    transform: skewY(-50deg);
+    transform-origin: top left;
+}
+
+.logo-empresa img {
+    height: 50px; /* Ajuste a altura da logo conforme necessário */
+    margin-left: 5px;
+}
+
+.cabecalho-principal nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.cabecalho-principal nav ul li {
+    margin: 0 15px;
+}
+
+.cabecalho-principal img {
+    width: 400px;
+    height: 200px;
+    margin-right: 30px;
+    margin-top: -40px;
+    margin-bottom: -60px;
+}
+
+.cabecalho-principal nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: rgba(22, 21, 21, 0.5);
+    border-radius: 5px;
+}
+
+.cabecalho-principal nav ul li a:hover {
+    color: #1E90FF;
+    background: #fff;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+#inicio {
+    background: url('images/empresa-seguranca.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#inicio .fundo {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#inicio .texto-boas-vindas {
+    position: relative;
+    z-index: 1;
+    width: 40%;
+}
+
+#inicio .texto-boas-vindas h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: left;
+    line-height: 1.1;
+    word-spacing: -2px;
+}
+
+#inicio .formulario-orcamento {
+    margin-right: 150px;
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    background-color: #2f6faf;
+    padding: 20px;
+    box-shadow: 0 0 20px #000;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+#inicio .formulario-orcamento h2 {
+    color: #000;
+}
+
+#inicio .formulario-orcamento button {
+    background-color: #000;
+    color: #fff;
+}
+
+#divisor {
+    width: 100%;
+    height: 50px;
+    background-color: #152535;
+}
+
+#alarmes {
+    background: url('images/minha-imagem-alarmes.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    transition: background 0.5s ease;
+}
+
+#alarmes h2 {
+    margin-bottom: 20px;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#alarmes .conteudo-alarmes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#alarmes img {
+    width: 650px;
+    height: 650px;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-right: 300px;
+    box-shadow: 0 0 20px #000;
+    padding: 2px;
+}
+
+#alarmes p {
+    color: #fff;
+    font-size: 28px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 800px;
+}
+
+#alarmes .fundo {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#alarmes .container {
+    position: relative;
+    z-index: 1;
+    margin-top: 80px;
+    font-size: 1055px;
+    width: 100%; /* Garante que a largura do container não exceda a viewport */
+}
+
+#divisor2 {
+    width: 100%;
+    height: 50px;
+    background-color: #152535;
+}
+
+#cameras {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background: url('images/fundo-cameras.jpg') no-repeat center center/cover;
+}
+
+#cameras .fundo {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#cameras .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#cameras h2 {
+    margin-bottom: 60px;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+#cameras .conteudo-cameras {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#cameras p {
+    color: #fff;
+    font-size: 28px;
+    text-align: left;
+    margin-left: 140px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+}
+
+#cameras .caixa-imagem-camera {
+    width: 650px;
+    height: 650px;
+    border-radius: 10px;
+    margin-right: 60px;
+    box-shadow: 0 0 20px #000;
+    overflow: hidden;
+}
+
+#cameras .caixa-imagem-camera img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#divisor3 {
+    width: 100%;
+    height: 50px;
+    background-color: #152535;
+}
+
+#sistemas {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background: url('images/fundo-sistemas.jpg') no-repeat center center/cover;
+}
+
+#sistemas .fundo {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#sistemas .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#sistemas h2 {
+    margin-bottom: 60px;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+#sistemas .conteudo-sistemas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#sistemas p {
+    color: #fff;
+    font-size: 28px;
+    text-align: left;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 800px;
+}
+
+#sistemas .caixa-imagem-sistema {
+    width: 650px;
+    height: 650px;
+    border-radius: 15px;
+    margin-top: 80px;
+    margin-left: 25px;
+    box-shadow: 0 0 20px #000;
+    overflow: hidden;
+    padding: 2px;
+}
+
+#sistemas .caixa-imagem-sistema img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#divisor4 {
+    width: 100%;
+    height: 50px;
+    background-color: #152535;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #fff;
+}
+
+section p {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #fff;
+}
+
+#contato {
+    display: none; /* Esconder a seção de contato duplicada */
+}
+
+footer {
+    padding: 0px;
+    color: #fff;
+    background-color: #1E90FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario-contato-container {
+    margin-top: 20px;
+    max-width: 600px; /* Aumentar a largura do formulário */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo sombreado */
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+    transform: translateX(400px); /* Posicionar 400px para a direita */
+}
+
+.formulario-contato-container h2,
+.formulario-contato-container p {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center; /* Alinhar textos à esquerda */
+}
+
+.formulario-contato-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-contato-container form label {
+    margin-bottom: 5px;
+    color: #fff;
+    width: 100%;
+    text-align: center; /* Alinhar rótulos à esquerda */
+}
+
+.formulario-contato-container form input,
+.formulario-contato-container form textarea,
+.formulario-contato-container form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px; /* Aumentar a largura dos campos do formulário */
+}
+
+.formulario-contato-container form button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-contato-container form button:hover {
+    background-color: #1C86EE;
+}
+
+.logo-rodape {
+    max-height: 400px; /* Aumentar a altura máxima da logo */
+    transform: translateX(-300px); /* Posicionar 500px para a esquerda */
+}
+
+.rodape-inferior {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    width: 120%;
+    background-color: #152535; /* Mesma cor de fundo do divisor4 */
+    text-align: center;
+    padding: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #000;
+}
+
+form input,
+form textarea,
+form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1C86EE;
+}
