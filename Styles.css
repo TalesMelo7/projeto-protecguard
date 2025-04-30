@@ -531,3 +531,24 @@ form button {
 form button:hover {
     background-color: #1C86EE;
 }
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Adiciona quebra de linha caso a tela seja pequena */
+  }
+  
+  .team-container a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
