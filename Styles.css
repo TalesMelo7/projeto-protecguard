@@ -41,7 +41,7 @@ html {
 }
 
 .divisor-diagonal {
-    margin-left: 1150px;
+    margin-left: 1050px;
     width: 100%; /* Garante que a largura do divisor não exceda a viewport */
     height: 2px;
     background-color: #1E90FF;
@@ -72,12 +72,15 @@ html {
     margin-bottom: -60px;
 }
 
+/*Menu de navegação*/
 .cabecalho-principal nav ul li a {
+    position: flex;
+    margin-right: 10px;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-    padding: 5px 10px;
+    padding: 8px 8px;
     background-color: rgba(22, 21, 21, 0.5);
     border-radius: 5px;
 }
@@ -413,7 +416,7 @@ section img {
 }
 
 #contato {
-    padding: 0px;
+    padding: 50px;
     color: #fff;
     background-color: #1E90FF;
     display: flex;
@@ -502,12 +505,12 @@ footer {
 }
 
 .rodape-inferior {
-    margin-top: 90px;
-    margin-bottom: 0px;
-    width: 120%;
-    background-color: #152535; /* Mesma cor de fundo do divisor4 */
+    margin-top: auto;
+    width: 100%;
+    background-color: #152535;
     text-align: center;
     padding: 10px 0;
+    color: #fff;
 }
 
 form {
@@ -543,4 +546,94 @@ form button {
 
 form button:hover {
     background-color: #1C86EE;
+}
+
+/*
+
+LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN
+
+*/
+
+/* Fundo da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #001464;  /* Cor de fundo escuro */
+}
+
+/* Página de login */
+.pagina-login {
+    max-width: 1100px;
+    margin: 250px auto;
+    padding: 50px;
+    background-color: #3A6EA5;  /* Tom de azul mais claro para o fundo do formulário */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Para colocar o overlay sobre o fundo do formulário */
+    overflow: hidden; /* Garante que o overlay não ultrapasse os limites do contêiner */
+    background: url('images/empresa-seguranca.jpg') no-repeat center center/cover;
+}
+
+/* Overlay escuro sobre a imagem de fundo do formulário */
+.pagina-login .fundo-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.644);  /* Efeito ofuscado com transparência */
+    z-index: 1; /* Coloca o overlay acima do fundo */
+    border-radius: 10px; /* Garantir que o overlay tenha bordas arredondadas */
+}
+
+/* Conteúdo do formulário (fica sobre o overlay) */
+.pagina-login .conteudo-formulario {
+    position: relative;
+    z-index: 2; /* Garante que o formulário fique sobre o overlay */
+}
+
+/* Formulário de login */
+.pagina-login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;  /* Cor do título em branco */
+}
+
+.pagina-login form label {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;  /* Cor do texto dos labels em branco */
+}
+
+.pagina-login form input {
+    max-width: 600px;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid #A3C1D3;  /* Cor clara para as bordas dos inputs */
+    border-radius: 5px;
+}
+
+.pagina-login form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+.rodape-inferior {
+    width: 100%;
+    background-color: #152535; /* Um azul mais escuro para o rodapé */
+    text-align: center;
+    padding: 15px 0;
+    color: #ffffff;
 }
