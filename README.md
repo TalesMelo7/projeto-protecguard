@@ -7,7 +7,7 @@ A interface é composta por um menu...
 
 ## 🧾 Funcionalidades:
 
-- **?**
+- **??**
 
 ## 🧱 Tecnologias Utilizadas:
 
