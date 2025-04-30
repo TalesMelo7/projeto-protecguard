@@ -56,9 +56,6 @@ ___
     <img loading="lazy" src="https://avatars.githubusercontent.com/u/166335795?v=4" width="115"><br><sub>Victor Mariano</sub>
   </a>
 </div>
-
-
-
 ___
 
 <!-- <p align="center">
