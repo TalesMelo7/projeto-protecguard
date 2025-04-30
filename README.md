@@ -39,25 +39,8 @@ ___
 
 # 👨‍💻 Autores
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 20px; border: 2px solid #ccc; border-radius: 10px; width: fit-content; margin: auto; background-color: #f9f9f9;">
-  <a href="https://github.com/TalesMelo7" target="_blank">
-    <img loading="lazy" src="https://avatars.githubusercontent.com/u/138174661?v=4" width="115"><br><sub>Tales Melo</sub>
-  </a>
-  <a href="https://github.com/YogorBrabo" target="_blank">
-    <img loading="lazy" src="https://avatars.githubusercontent.com/u/209833811?v=4" width="115"><br><sub>Yago Felipe</sub>
-  </a>
-  <a href="https://github.com/Luquinhas4545" target="_blank">
-    <img loading="lazy" src="https://avatars.githubusercontent.com/u/209548856?v=4" width="115"><br><sub>Lucas Costa</sub>
-  </a>
-  <a href="https://github.com/Gabriel2174" target="_blank">
-    <img loading="lazy" src="https://avatars.githubusercontent.com/u/209556296?v=4" width="115"><br><sub>Gabriel Ferro</sub>
-  </a>
-  <a href="https://github.com/Vituussx" target="_blank">
-    <img loading="lazy" src="https://avatars.githubusercontent.com/u/166335795?v=4" width="115"><br><sub>Victor Mariano</sub>
-  </a>
-</div>
-
-
+| [<img src="https://avatars.githubusercontent.com/u/138174661?v=4" width="115"><br><sub>Tales Melo</sub>](https://github.com/TalesMelo7) | [<img src="https://avatars.githubusercontent.com/u/209833811?v=4" width="115"><br><sub>Yago Felipe</sub>](https://github.com/YogorBrabo) | [<img src="https://avatars.githubusercontent.com/u/209548856?v=4" width="115"><br><sub>Lucas Costa</sub>](https://github.com/Luquinhas4545) | [<img src="https://avatars.githubusercontent.com/u/209556296?v=4" width="115"><br><sub>Gabriel Ferro</sub>](https://github.com/Gabriel2174) | [<img src="https://avatars.githubusercontent.com/u/166335795?v=4" width="115"><br><sub>Victor Mariano</sub>](https://github.com/Vituussx) |
+|:---:|:---:|:---:|:---:|:---:|
 
 ___
 
