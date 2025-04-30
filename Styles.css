@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     line-height: 1.6;
@@ -43,7 +47,7 @@ body {
     background-color: #1E90FF;
     position: static;
     transform: skewY(-50deg);
-    transform-origin: top left;
+    transform-origin: top left
 }
 
 .logo-empresa img {
