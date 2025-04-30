@@ -15,7 +15,7 @@ A interface é composta por um menu...
 
 ## 🚧 Melhorias Possíveis:
 
-- **Adicionar responsividade**
+- **Adicionar**
   
 ## 🛠 Como usar
 
