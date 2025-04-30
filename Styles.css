@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     line-height: 1.6;
@@ -16,6 +12,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -47,7 +47,7 @@ body {
     background-color: #1E90FF;
     position: static;
     transform: skewY(-50deg);
-    transform-origin: top left
+    transform-origin: top left;
 }
 
 .logo-empresa img {
@@ -413,7 +413,13 @@ section img {
 }
 
 #contato {
-    display: none; /* Esconder a seção de contato duplicada */
+    padding: 0px;
+    color: #fff;
+    background-color: #1E90FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 footer {
@@ -434,13 +440,13 @@ footer {
 }
 
 .formulario-contato-container {
-    margin-top: 20px;
+    margin-top: 50px;
     max-width: 600px; /* Aumentar a largura do formulário */
     padding: 20px;
     background: rgba(0, 0, 0, 0.7); /* Fundo sombreado */
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
-    transform: translateX(400px); /* Posicionar 400px para a direita */
+    transform: translateX(300px); /* Posicionar 400px para a direita */
 }
 
 .formulario-contato-container h2,
@@ -488,12 +494,15 @@ footer {
 }
 
 .logo-rodape {
+    margin-top: 80px;
     max-height: 400px; /* Aumentar a altura máxima da logo */
-    transform: translateX(-300px); /* Posicionar 500px para a esquerda */
+    transform: translateX(-200px); /* Posicionar 500px para a esquerda */
+    background-color: #1E90FF;
+    border:none;
 }
 
 .rodape-inferior {
-    margin-top: 60px;
+    margin-top: 90px;
     margin-bottom: 0px;
     width: 120%;
     background-color: #152535; /* Mesma cor de fundo do divisor4 */
