@@ -1,3 +1,4 @@
+/* ESTILOS GERAIS */
 * {
     margin: 0;
     padding: 0;
@@ -5,20 +6,60 @@
 }
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #3A6EA5;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Garante altura mínima da viewport */
     margin: 0;
+    padding-top: 80px;
+    background-color: #3A6EA5;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #000;
+}
+
+form input,
+form textarea,
+form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1C86EE;
+}
+
+/* ESTILOS PARA INDEX.HTML */
 .container {
     width: 100%;
     max-width: 2200px;
@@ -28,24 +69,26 @@ html {
 }
 
 .cabecalho-principal {
-    background: linear-gradient(to right, #df0000, #1E90FF);
-    padding: 0px 0; /* Ajusta o padding */
-    position: relative;
-    width: 100%; /* Garante que a largura do cabeçalho não exceda a viewport */
+    background: linear-gradient(to right, #000, #1E90FF);
+    padding: 0px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .cabecalho-principal .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Garante que a largura do container não exceda a viewport */
+    width: 100%;
 }
 
 #divisor,
 #divisor2,
 #divisor3,
 #divisor4 {
-
     z-index: 1;
     height: 0.2rem;
     margin: 0.20% 0;
@@ -54,7 +97,7 @@ html {
 
 .divisor-diagonal {
     margin-left: 1050px;
-    width: 100%; /* Garante que a largura do divisor não exceda a viewport */
+    width: 100%;
     height: 2px;
     background-color: #1E90FF;
     position: static;
@@ -63,8 +106,7 @@ html {
 }
 
 .logo-empresa img {
-    height: 50px; /* Ajuste a altura da logo conforme necessário */
-    margin-left: 5px;
+    height: 40px;
 }
 
 .cabecalho-principal nav ul {
@@ -77,14 +119,13 @@ html {
 }
 
 .cabecalho-principal img {
-    width: 400px;
+    width: 350px;
     height: 200px;
     margin-right: 30px;
     margin-top: -40px;
     margin-bottom: -60px;
 }
 
-/*Menu de navegação*/
 .cabecalho-principal nav ul li a {
     position: flex;
     margin-right: 10px;
@@ -229,7 +270,7 @@ section {
     z-index: 1;
     margin-top: 80px;
     font-size: 1055px;
-    width: 100%; /* Garante que a largura do container não exceda a viewport */
+    width: 100%;
 }
 
 #cameras {
@@ -403,24 +444,12 @@ section img {
     background: #fff;
 }
 
-#contato {
-    padding: 50px;
-    color: #fff;
-    background-color: #1E90FF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
+/* Estiliza o footer */
 footer {
-    padding: 0px;
-    color: #fff;
-    background-color: #1E90FF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #152535;
 }
 
 .conteudo-rodape {
@@ -430,61 +459,99 @@ footer {
     width: 100%;
 }
 
-.formulario-contato-container {
-    margin-top: 50px;
-    max-width: 600px; /* Aumentar a largura do formulário */
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7); /* Fundo sombreado */
-    border-radius: 10px;
-    box-shadow: 0 0 20px #000;
-    transform: translateX(300px); /* Posicionar 400px para a direita */
+.logo-rodape {
+    height: 110px;
+    width: auto;
+    margin-left: 700px;
 }
 
-.formulario-contato-container h2,
-.formulario-contato-container p {
-    margin-bottom: 20px;
+.rodape-index {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    background-color: #152535;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
     color: #fff;
-    text-align: center; /* Alinhar textos à esquerda */
+    font-size: 14px;
+    height: 100%;
+    position: relative;
 }
 
-.formulario-contato-container form {
+/* LOGIN LOGIN LOGIN LOGIN LOGIN */
+.login {
+    flex: 1; /* Faz o .login crescer para ocupar o espaço disponível */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: #3A6EA5;
+    min-height: 100vh; /* Garante altura mínima */
+    margin: 0;
+    padding: 0;
+}
+.pagina-login {
+    max-width: 1100px;
+    margin: 250px auto;
+    padding: 50px;
+    background-color: #3A6EA5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    background: url('images/empresa-seguranca.jpg') no-repeat center center/cover;
 }
 
-.formulario-contato-container form label {
-    margin-bottom: 5px;
-    color: #fff;
+.pagina-login .fundo-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.pagina-login .conteudo-formulario {
+    position: relative;
+    z-index: 2;
+}
+
+.pagina-login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.pagina-login form label {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.pagina-login form input {
+    max-width: 600px;
     width: 100%;
-    text-align: center; /* Alinhar rótulos à esquerda */
-}
-
-.formulario-contato-container form input,
-.formulario-contato-container form textarea,
-.formulario-contato-container form select {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid #A3C1D3;
     border-radius: 5px;
-    width: 100%;
-    max-width: 600px; /* Aumentar a largura dos campos do formulário */
 }
 
-.formulario-contato-container form button {
+.pagina-login form button {
+    width: 100%;
     padding: 10px;
-    background-color: #000;
-    color: #fff;
+    margin-top: 20px;
+    color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-.formulario-contato-container form button:hover {
-    background-color: #1C86EE;
-}
-
-.rodape-inferior {
+.rodape-login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -501,130 +568,26 @@ footer {
     z-index: 1000;
 }
 
-.logo-rodape {
-    height: 150px; /* Tamanho fixo da logo */
-    width: auto;
-    margin-left: -50px;
-}
-
-form {
+/* RECUPERAR-SENHA RECUPERAR-SENHA RECUPERAR-SENHA */
+.rodape-recuperar {
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-form label {
-    margin-bottom: 5px;
-    color: #000;
-}
-
-form input,
-form textarea,
-form select {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    justify-content: center;
+    background-color: #152535;
+    padding: 15px 20px;
+    height: 60px;
     width: 100%;
-    max-width: 500px;
-}
-
-form button {
-    padding: 10px;
-    background-color: #1E90FF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #1C86EE;
-}
-
-/*
-
-LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN
-
-*/
-
-/* Fundo da página */
-.login {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #3A6EA5;
-    flex: 1;
-}
-
-/* Página de login */
-.pagina-login {
-    max-width: 1100px;
-    margin: 250px auto;
-    padding: 50px;
-    background-color: #3A6EA5;  /* Tom de azul mais claro para o fundo do formulário */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Para colocar o overlay sobre o fundo do formulário */
-    overflow: hidden; /* Garante que o overlay não ultrapasse os limites do contêiner */
-    background: url('images/empresa-seguranca.jpg') no-repeat center center/cover;
-}
-
-/* Overlay escuro sobre a imagem de fundo do formulário */
-.pagina-login .fundo-overlay {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.644);  /* Efeito ofuscado com transparência */
-    z-index: 1; /* Coloca o overlay acima do fundo */
-    border-radius: 10px; /* Garantir que o overlay tenha bordas arredondadas */
-}
-
-/* Conteúdo do formulário (fica sobre o overlay) */
-.pagina-login .conteudo-formulario {
-    position: relative;
-    z-index: 2; /* Garante que o formulário fique sobre o overlay */
-}
-
-/* Formulário de login */
-.pagina-login h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff;  /* Cor do título em branco */
-}
-
-.pagina-login form label {
-    display: block;
-    margin-top: 10px;
-    color: #ffffff;  /* Cor do texto dos labels em branco */
-}
-
-.pagina-login form input {
-    max-width: 600px;
-    width: 100%;
-    padding: 8px;
-    margin-top: 8px;
     box-sizing: border-box;
-    border: 1px solid #A3C1D3;  /* Cor clara para as bordas dos inputs */
-    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    /* Remover position: fixed para integrar ao fluxo do layout */
 }
 
-.pagina-login form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.link-esqueci-senha {
+.link-recuperar {
     display: block;
     text-align: right;
     margin: 10px 0 15px;
@@ -632,9 +595,9 @@ LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
-  }
-  
-  .link-esqueci-senha:hover {
+}
+
+.link-recuperar:hover {
     color: #fff;
     text-decoration: underline;
-  }
+}
