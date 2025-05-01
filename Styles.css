@@ -7,7 +7,7 @@
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #3A6EA5;
     overflow-x: hidden; /* Garante que não haja rolamento horizontal */
     display: flex;
     flex-direction: column;
@@ -38,6 +38,17 @@ html {
     justify-content: space-between;
     align-items: center;
     width: 100%; /* Garante que a largura do container não exceda a viewport */
+}
+
+#divisor,
+#divisor2,
+#divisor3,
+#divisor4 {
+
+    z-index: 1;
+    height: 0.2rem;
+    margin: 0.20% 0;
+    border-radius: 1rem;
 }
 
 .divisor-diagonal {
@@ -158,12 +169,6 @@ section {
     color: #fff;
 }
 
-#divisor {
-    width: 100%;
-    height: 50px;
-    background-color: #152535;
-}
-
 #alarmes {
     background: url('images/minha-imagem-alarmes.jpg') no-repeat center center/cover;
     position: relative;
@@ -224,12 +229,6 @@ section {
     margin-top: 80px;
     font-size: 1055px;
     width: 100%; /* Garante que a largura do container não exceda a viewport */
-}
-
-#divisor2 {
-    width: 100%;
-    height: 50px;
-    background-color: #152535;
 }
 
 #cameras {
@@ -306,12 +305,6 @@ section {
     object-fit: cover;
 }
 
-#divisor3 {
-    width: 100%;
-    height: 50px;
-    background-color: #152535;
-}
-
 #sistemas {
     position: relative;
     height: 100vh;
@@ -386,12 +379,6 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-#divisor4 {
-    width: 100%;
-    height: 50px;
-    background-color: #152535;
 }
 
 section h2 {
@@ -555,13 +542,13 @@ LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN
 */
 
 /* Fundo da página */
-html, body {
+.login {
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color: #001464;  /* Cor de fundo escuro */
+    background-color: #3A6EA5;  /* Cor de fundo escuro */
 }
 
 /* Página de login */
