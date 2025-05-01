@@ -496,21 +496,24 @@ footer {
     background-color: #1C86EE;
 }
 
-.logo-rodape {
-    margin-top: 80px;
-    max-height: 400px; /* Aumentar a altura máxima da logo */
-    transform: translateX(-200px); /* Posicionar 500px para a esquerda */
-    background-color: #1E90FF;
-    border:none;
+.rodape-inferior {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 580px; /* Adiciona espaço entre logo e texto */    
+    background-color: #152535;
+    padding: 0 40px;
+    height: 80px; /* Altura fixa */
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 17px;
 }
 
-.rodape-inferior {
-    margin-top: auto;
-    width: 100%;
-    background-color: #152535;
-    text-align: center;
-    padding: 10px 0;
-    color: #fff;
+.logo-rodape {
+    height: 150px; /* Tamanho fixo da logo */
+    width: auto;
+    margin-left: -50px;
 }
 
 form {
@@ -561,7 +564,7 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-color: #001464;  /* Cor de fundo escuro */
+    background-color: #152535;  /* Cor de fundo escuro */
 }
 
 /* Página de login */
@@ -627,13 +630,4 @@ html, body {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-}
-
-/* Rodapé */
-.rodape-inferior {
-    width: 100%;
-    background-color: #152535; /* Um azul mais escuro para o rodapé */
-    text-align: center;
-    padding: 15px 0;
-    color: #ffffff;
 }
