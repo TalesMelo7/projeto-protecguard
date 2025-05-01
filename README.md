@@ -23,6 +23,7 @@ A interface é composta por um menu...
 - **Adicionar captcha**
 - **Adicionar menu burger**
 - **Alterar fundo do formulário de login**
+- **Arrumar o rodapé**
 - **Estilizar página de login**
 - **Permitir criar um orçamento somente com login ativo**
 - **Retirar formulário de orçamento e repensar na página principal**
