@@ -21,7 +21,6 @@ A interface é composta por um menu...
 - **Adicionar página de câmeras**
 - **Adicionar página de sistemas**
 - **Adicionar captcha**
-- **Adicionar página de sistemas**
 - **Adicionar menu burger**
 - **Alterar fundo do formulário de login**
 - **Estilizar página de login**
