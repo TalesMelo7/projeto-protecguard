@@ -15,7 +15,20 @@ A interface é composta por um menu...
 
 ## 🚧 Melhorias Possíveis:
 
-- **Adicionar**
+- **Adicionar esqueci minha senha a página de login**
+- **Adicionar página de cadastro de usuário**
+- **Adicionar página de alarmes**
+- **Adicionar página de câmeras**
+- **Adicionar página de sistemas**
+- **Adicionar captcha**
+- **Adicionar página de sistemas**
+- **Adicionar menu burger**
+- **Alterar fundo do formulário de login**
+- **Arrumar o divisor entre as seçoes**
+- **Estilizar página de login**
+- **Permitir criar um orçamento somente com login ativo**
+- **Retirar formulário de orçamento e repensar na página principal**
+- **Adicionar base de dados para logins**
   
 ## 🛠 Como usar
 
