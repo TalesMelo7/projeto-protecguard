@@ -76,10 +76,6 @@ html {
     margin: 0 15px;
 }
 
-.caixa-link{
-    border-radius: 10px;
-}
-
 .cabecalho-principal img {
     width: 400px;
     height: 200px;
@@ -89,7 +85,6 @@ html {
 }
 
 /*Menu de navegação*/
-/*fundo do botao*/
 .cabecalho-principal nav ul li a {
     position: flex;
     margin-right: 10px;
