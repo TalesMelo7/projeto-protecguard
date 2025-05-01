@@ -24,7 +24,6 @@ A interface é composta por um menu...
 - **Adicionar página de sistemas**
 - **Adicionar menu burger**
 - **Alterar fundo do formulário de login**
-- **Arrumar o divisor entre as seçoes**
 - **Estilizar página de login**
 - **Permitir criar um orçamento somente com login ativo**
 - **Retirar formulário de orçamento e repensar na página principal**
