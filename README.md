@@ -16,15 +16,11 @@ A interface é composta por um menu...
 ## 🚧 Melhorias Possíveis:
 
 - **Adicionar página de cadastro de usuário**
-- **Adicionar captcha**
-- **Adicionar menu burger**
 - **Adicionar base de dados para logins**
-- **Alterar fundo do formulário de login**
 - **Estilizar página de recuperar senha**
 - **Estilizar página de alarmes**
 - **Estilizar página de câmeras**
 - **Estilizar página de sistemas**
-- **Estilizar página de login**
 - **Permitir criar um orçamento somente com login ativo**
   
 ## 🛠 Como usar

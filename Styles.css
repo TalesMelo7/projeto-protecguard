@@ -37,26 +37,26 @@ form {
 }
 
 form label {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
     color: var(--cor-preta);
 }
 
 form input,
 form textarea,
 form select {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 0.625rem;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
     width: 100%;
 }
 
 form button {
-    padding: 10px;
+    padding: 0.0625rem;
     background-color: var(--cor-de-fundo);
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;;
     cursor: pointer;
 }
 
@@ -94,7 +94,7 @@ form button:hover {
 .divisor-diagonal {
     margin: 0 50%;
     width: 50%;
-    height: 2px;
+    height: 0.125rem;
     background-color: var(--cor-de-fundo);
     position: static;
     transform: skewY(-50deg);
@@ -112,23 +112,23 @@ form button:hover {
 }
 
 .cabecalho-principal img {
-    width: 350px;
-    height: 200px;
-    margin-right: 30px;
-    margin-top: -40px;
-    margin-bottom: -60px;
+    width: 21.875rem;
+    height: 12.5rem;
+    margin-right: 1.875rem;
+    margin-top: -2.5rem;
+    margin-bottom: -3.75rem;
 }
 
 .cabecalho-principal nav ul li a {
     position: flex;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     color: var(--cor-branca);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
-    padding: 8px 8px;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
     background-color: rgba(22, 21, 21, 0.5);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -137,7 +137,7 @@ form button:hover {
 }
 
 section {
-    padding: 40px 0;
+    padding: 2.5rem 0;
     text-align: center;
     flex: 1 0 auto;
 }
@@ -150,7 +150,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 #inicio .fundo {
@@ -174,8 +174,8 @@ section {
 #inicio .texto-boas-vindas h2 {
     font-family: var(--fonte-secundaria);
     margin-left: 6.25rem;
-    margin-bottom: 20px;
-    font-size: 45px;
+    margin-bottom: 1.25rem;
+    font-size: 2.8125rem;
     text-align: left;
 }
 
@@ -186,9 +186,9 @@ section {
     width: 25%;
     background-color: #2f6faf;
     padding: 1.3rem;
-    box-shadow: 0 0 20px var(--cor-preta);
+    box-shadow: 0 0 1.25rem var(--cor-preta);
     border: 0.2rem solid var(--cor-preta);
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -199,7 +199,7 @@ section {
 #inicio .formulario-orcamento button {
     background-color: var(--cor-preta);
     color: var(--cor-branca);
-    border: 1px solid var(--cor-preta);
+    border: 0.0625rem solid var(--cor-preta);
     padding: 2%;
     margin: 2%;
 }
@@ -220,7 +220,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     background: url('images/fundo-sistemas.jpg') no-repeat center center/cover;
 }
 
@@ -247,8 +247,8 @@ section {
 }
 
 #alarmes h2 {
-    margin-bottom: 60px;
-    font-size: 45px;
+    margin-bottom: 3.75rem;
+    font-size: 2.8125rem;
     color: var(--cor-branca);
     text-align: center;
     font-family: var(--fonte-secundaria);
@@ -264,22 +264,22 @@ section {
 
 #alarmes p {
     color: var(--cor-branca);
-    font-size: 28px;
+    font-size: 1.75rem;
     text-align: left;
-    margin-right: 50px;
+    margin-right: 3.125rem;
     font-family: var(--fonte-secundaria);
-    max-width: 800px;
+    max-width: 50rem;
 }
 
 #alarmes .caixa-imagem-alarme {
-    width: 650px;
-    height: 600px;
-    border-radius: 15px;
-    margin-top: 40px;
-    margin-left: 150px;
-    box-shadow: 0 0 20px var(--cor-preta);
+    width: 40.625rem;
+    height: 37.5rem;
+    border-radius: 0.9375rem;
+    margin-top: 2.5rem;
+    margin-left: 9.375rem;
+    box-shadow: 0 0 1.25rem var(--cor-preta);
     overflow: hidden;
-    padding: 2px;
+    padding: 0,125rem;
 }
 
 #alarmes .caixa-imagem-alarme img {
@@ -291,8 +291,8 @@ section {
 .link-alarmes {
     background-color: var(--cor-do-rodape);
     display: inline-block;
-    padding: 10px 10px;
-    border-radius: 7px;
+    padding: 0.625rem 0.625rem;
+    border-radius: 0.4375rem;
 }
 
 .link-alarmes a {
@@ -312,7 +312,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     background: url('images/fundo-cameras.jpg') no-repeat center center/cover;
 }
 
@@ -339,8 +339,8 @@ section {
 }
 
 #cameras h2 {
-    margin-bottom: 60px;
-    font-size: 45px;
+    margin-bottom: 3.75rem;
+    font-size: 2.8125rem;
     color: var(--cor-branca);
     text-align: center;
     font-family: var(--fonte-secundaria);
@@ -356,19 +356,19 @@ section {
 
 #cameras p {
     color: var(--cor-branca);
-    font-size: 28px;
+    font-size: 1.75rem;
     text-align: left;
-    margin-left: 140px;
+    margin-left: 8.75rem;
     font-family: var(--fonte-secundaria);
-    max-width: 700px;
+    max-width: 43.75rem;
 }
 
 #cameras .caixa-imagem-camera {
-    width: 650px;
-    height: 650px;
-    border-radius: 10px;
-    margin-right: 90px;
-    box-shadow: 0 0 20px var(--cor-preta);
+    width: 40.625rem;
+    height: 40.625rem;
+    border-radius: 0.625rem;
+    margin-right: 5.625rem;
+    box-shadow: 0 0 1.25rem var(--cor-preta);
     overflow: hidden;
 }
 
@@ -381,8 +381,8 @@ section {
 .link-cameras {
     display: inline-block;
     background-color: var(--cor-do-rodape); /* Cor consistente com botões */
-    padding: 10px 10px;
-    border-radius: 7px;
+    padding: 0.625rem 0.625rem;
+    border-radius: 0.4375rem;
 }
 
 .link-cameras a {
@@ -402,7 +402,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     background: url('images/fundo-sistemas.jpg') no-repeat center center/cover;
 }
 
@@ -429,8 +429,8 @@ section {
 }
 
 #sistemas h2 {
-    margin-bottom: 60px;
-    font-size: 45px;
+    margin-bottom: 3.75rem;
+    font-size: 2.8125rem;
     color: var(--cor-branca);
     text-align: center;
     font-family: var(--fonte-secundaria);
@@ -446,22 +446,22 @@ section {
 
 #sistemas p {
     color: var(--cor-branca);
-    font-size: 28px;
+    font-size: 1.75rem;
     text-align: left;
-    margin-right: 85px;
+    margin-right: 5.3125rem;
     font-family: var(--fonte-secundaria);
-    max-width: 800px;
+    max-width: 50rem;
 }
 
 #sistemas .caixa-imagem-sistema {
-    width: 650px;
-    height: 600px;
-    border-radius: 15px;
-    margin-top: 50px;
-    margin-left: 100px;
-    box-shadow: 0 0 20px var(--cor-preta);
+    width: 40.625rem;
+    height: 37.5rem;
+    border-radius: 0.9375rem;
+    margin-top: 3.125rem;
+    margin-left: 6.25rem;
+    box-shadow: 0 0 1.25rem var(--cor-preta);
     overflow: hidden;
-    padding: 2px;
+    padding: 0.125rem;
 }
 
 #sistemas .caixa-imagem-sistema img {
@@ -473,8 +473,8 @@ section {
 .link-sistemas {
     display: inline-block;
     background-color: var(--cor-do-rodape); /* Cor consistente com botões */
-    padding: 10px 10px;
-    border-radius: 7px;
+    padding: 0.625rem 0.625rem;
+    border-radius: 0.4375rem;
 }
 
 .link-sistemas a {
@@ -489,22 +489,22 @@ section {
 
 
 section h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
     color: var(--cor-branca);
 }
 
 section p {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: var(--cor-branca);
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 section img {
     max-width: 100%;
-    margin-bottom: 20px;
-    border: 1px solid var(--cor-branca);
-    padding: 5px;
+    margin-bottom: 1.25rem;
+    border: 0.0625rem solid var(--cor-branca);
+    padding: 0.3125rem;
     background-color: var(--cor-branca);
 }
 
@@ -519,7 +519,7 @@ section img {
     width: 100%;
     box-sizing: border-box;
     color: var(--cor-branca);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .rodape-texto {
