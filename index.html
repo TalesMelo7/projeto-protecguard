@@ -9,9 +9,7 @@
 <body>
     <header class="cabecalho-principal">
         <div class="container">
-            <div class="logo-empresa">
-                <img src="images/logo.png" alt="Imagem do Logo">
-            </div>
+                <img class="cabecalho-img" src="images/logo.png" alt="Imagem do Logo">
             <nav>
                 <ul>
                     <li><a href="#inicio">Home</a></li>
@@ -44,16 +42,12 @@
                     <input type="tel" id="telefone-orcamento" name="telefone-orcamento" required>
                     
                     <label for="solucao-desejada">Solução desejada:</label>
-                    <select id="solucao-desejada" name="solucao-desejada" required>
+                    <select class="texto-select" id="solucao-desejada" name="solucao-desejada" required>
                         <option value="">Selecione uma solução</option>
                         <option value="alarmes">Alarmes</option>
                         <option value="cameras">Câmeras</option>
                         <option value="sistemas">Sistemas de Segurança</option>
-                        <option value="portaria">Portaria Remota</option>
                     </select>
-                    
-                    <label for="cpf-cnpj">CPF ou CNPJ:</label>
-                    <input type="text" id="cpf-cnpj" name="cpf-cnpj" required>
                     
                     <button type="submit">Solicitar Orçamento</button>
                 </form>
@@ -118,8 +112,7 @@
 
     <footer>
         <div class="rodape-index">
-            <img src="images/logo.png" alt="Logo ProtecGuard" class="logo-rodape">
-            <p>© 2024 ProtecGuard. Todos os direitos reservados.</p>
+            <p class="rodape-texto">© 2024 ProtecGuard. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
