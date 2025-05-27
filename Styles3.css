@@ -21,15 +21,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    height: 100vh;
     background-color: var(--cor-de-fundo);
-}
-
-.container {
-    width: 100%;
-    max-width: 2200px;
-    margin: auto;
-    padding: -20px;
-    overflow: hidden;
 }
 
 .formulario {
@@ -39,16 +32,16 @@ body {
     align-items: center;
     position: relative;
     z-index: 2;
+    gap: 0.4rem;
 }
 
 .cabecalho-principal {
     background: linear-gradient(to right, #000, #1E90FF);
     padding: 0;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .cabecalho-principal .container {
@@ -56,6 +49,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0.3% 0;
 }
 
 #divisor,
@@ -70,7 +64,7 @@ body {
 
 .divisor-diagonal {
     margin-left: 1050px;
-    width: 100%;
+    width: 40%;
     height: 2px;
     background-color: #1E90FF;
     position: static;
@@ -113,40 +107,129 @@ body {
 }
 
 .cabecalho-principal nav ul li a:hover {
-    color: #1E90FF;
-    background: #fff;
+    background: black;
 }
 
-/* RECUPERAR-SENHA RECUPERAR-SENHA RECUPERAR-SENHA */
+.recuperar {
+    flex: 1; /* Faz o .login crescer para ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo-principal {
+    text-align: center;
+    height: 100vh;
+}
+
+.pagina-recuperar {
+    max-width: 1100px;
+    margin: 15.62rem auto;
+    padding: 5rem;
+    background-color: var(--cor-de-fundo);
+    border-radius: 0.6rem;
+    box-shadow: 0 0 2rem #000000;
+    position: relative;
+    background: url('images/empresa-seguranca.jpg') no-repeat center center/cover;
+}
+
+.pagina-recuperar .fundo-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.pagina-recuperar form button {
+    width: 20%;
+    padding: 1%;
+    margin: 3% 0 0.5% 0;
+    color: var(--cor-branca);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0.06rem solid #A3C1D3;
+    background-color: var(--cor-do-rodape);
+}
+
+.pagina-recuperar form button:hover {
+    background-color: black;
+}
+
+.subtitulo-recuperar {
+    color: var(--cor-branca);
+    font-family: var(--fonte-primaria);
+    padding: 0;
+    font-size: 2rem;
+    margin: 0 0 5% 0;
+    z-index: 1;
+}
+
+.pagina-recuperar form input {
+    max-width: 37.5rem;
+    width: 50%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    border: 0.06rem solid #A3C1D3;
+    border-radius: 5px;
+    background-color: var(--cor-do-rodape);
+    color: var(--cor-branca);
+}
+
+.label-texto {
+    color: var(--cor-branca);
+    font-family: var(--fonte-secundaria);
+    padding: 0.2%;
+    max-width: 25rem;
+    text-align: center;
+    align-items: center;
+    margin: 0 29%;
+    font-size: 20px;
+}
+
+.botoes-form {
+    padding: 2%;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-right: 3%;
+}
+
 .rodape-recuperar {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #152535;
-    padding: 0.2%;
-    height: 60px;
+    background-color: var(--cor-do-rodape);
+    padding: 1%;
     width: 100%;
     box-sizing: border-box;
     color: var(--cor-branca);
     font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    /* Remover position: fixed para integrar ao fluxo do layout */
+}
+
+.rodape-texto {
+    font-family: var(--fonte-secundaria);
 }
 
 .link-recuperar {
     display: block;
     text-align: right;
     margin: 10px 0 15px;
-    color: #1E90FF;
+    color: var(--cor-branca);
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .link-recuperar:hover {
-    color: var(--cor-branca);
+    color: cyan;
     text-decoration: underline;
 }
