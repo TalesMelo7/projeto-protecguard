@@ -17,7 +17,7 @@ A interface é composta por um menu...
 
 - **Adicionar página de cadastro de usuário**
 - **Adicionar base de dados para logins**
-- **Estilizar página de recuperar senha**
+- **Corrigir altura viewport página recuperar-senha.html**
 - **Estilizar página de alarmes**
 - **Estilizar página de câmeras**
 - **Estilizar página de sistemas**
