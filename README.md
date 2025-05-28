@@ -19,7 +19,7 @@ A interface é composta por um menu...
 - **Adicionar base de dados para logins**
 - **Corrigir altura viewport página recuperar-senha.html**
 - **Estilizar página de alarmes**
-- **Estilizar página de câmeras**
+- **terminar a estilização da página de câmeras**
 - **Estilizar página de sistemas**
 - **Permitir criar um orçamento somente com login ativo**
   
