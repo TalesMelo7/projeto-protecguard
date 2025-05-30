@@ -21,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100vh;
     background-color: var(--cor-de-fundo);
 }
 
@@ -38,10 +37,11 @@ body {
 .cabecalho-principal {
     background: linear-gradient(to right, #000, #1E90FF);
     padding: 0;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .cabecalho-principal .container {
@@ -63,9 +63,9 @@ body {
 }
 
 .divisor-diagonal {
-    margin-left: 1050px;
-    width: 40%;
-    height: 2px;
+    margin-left: 65.625rem;
+    width: 100%;
+    height: 0.125rem;
     background-color: #1E90FF;
     position: static;
     transform: skewY(-50deg);
@@ -110,13 +110,14 @@ body {
     background: black;
 }
 
-.recuperar {
+.login {
     flex: 1; /* Faz o .login crescer para ocupar o espaço disponível */
     display: flex;
     flex-direction: column;
     background-color: var(--cor-de-fundo);
-    height: 100vh;
+    min-height: 100vh; /* Garante altura mínima */
     margin: 0;
+    padding: 0;
 }
 
 .conteudo-principal {
@@ -124,18 +125,18 @@ body {
     height: 100vh;
 }
 
-.pagina-recuperar {
-    max-width: 1100px;
+.pagina-login {
+    max-width: 68.75rem;
     margin: 15.62rem auto;
     padding: 5rem;
     background-color: var(--cor-de-fundo);
     border-radius: 0.6rem;
     box-shadow: 0 0 2rem #000000;
     position: relative;
-    background: url('images/empresa-seguranca.jpg') no-repeat center center/cover;
+    background: url('../images/empresa-seguranca.jpg') no-repeat center center/cover;
 }
 
-.pagina-recuperar .fundo-overlay {
+.pagina-login .fundo-overlay {
     content: "";
     position: absolute;
     top: 0;
@@ -144,84 +145,121 @@ body {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.644);
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
-.pagina-recuperar form button {
-    width: 20%;
-    padding: 1%;
-    margin: 3% 0 0.9% 0;
-    color: var(--cor-branca);
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 0.06rem solid #A3C1D3;
-    background-color: var(--cor-do-rodape);
-}
-
-.pagina-recuperar form button:hover {
-    background-color: black;
-}
-
-.subtitulo-recuperar {
-    color: var(--cor-branca);
+.subtitulo-login {
     font-family: var(--fonte-primaria);
     padding: 0;
     font-size: 2rem;
     margin: 0 0 5% 0;
-    z-index: 1;
 }
 
-.pagina-recuperar form input {
+.pagina-login form input {
     max-width: 37.5rem;
     width: 50%;
     padding: 0.6rem;
     margin-top: 0.5rem;
     box-sizing: border-box;
     border: 0.06rem solid #A3C1D3;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background-color: var(--cor-do-rodape);
     color: var(--cor-branca);
 }
 
 .label-texto {
-    color: var(--cor-branca);
     font-family: var(--fonte-secundaria);
     padding: 0.2%;
     max-width: 25rem;
     text-align: center;
     align-items: center;
     margin: 0 29%;
-    font-size: 20px;
 }
 
-.rodape-recuperar {
+/* Adicione ao seu Styles2.css */
+
+.opcoes-login {
+  display: flex; /* Alinha o checkbox e o label na mesma linha */
+  align-items: center; /* Centraliza verticalmente */
+  width: 27.5%; /* Ocupa a largura do container do formulário */
+  margin: 0.5rem 4rem 1rem 0;
+}
+
+.opcoes-login input[type="checkbox"] {
+  margin: 0;
+  padding: 5%;
+}
+
+.label-manter-conectado {
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-branca);
+  font-size: 0.95rem; /* Tamanho um pouco menor */
+  margin: 0;
+  width: 100%;
+}
+
+
+.link-esqueci-senha {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-family: var(--fonte-secundaria);
+}
+
+.link-esqueci-senha:hover {
+    color: cyan;
+    transition: color 0.3s ease;
+}
+
+.barra-span {
+    color: white;
+}
+
+.pagina-login h2 {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: var(--cor-branca);
+}
+
+.pagina-login form label {
+    display: block;
+    margin-top: 0.625rem;
+    color: var(--cor-branca);
+}
+
+.pagina-login form button {
+    width: 20%;
+    padding: 1%;
+    margin: 3% 0 0.5% 0;
+    color: var(--cor-branca);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    border: 0.06rem solid #A3C1D3;
+    background-color: var(--cor-do-rodape);
+}
+
+.pagina-login form button:hover {
+    background-color: black;
+}
+
+.rodape-login {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--cor-do-rodape);
     padding: 1%;
+    height: 3.75rem;
     width: 100%;
     box-sizing: border-box;
     color: var(--cor-branca);
-    font-size: 14px;
+    font-size: 0.875rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .rodape-texto {
     font-family: var(--fonte-secundaria);
 }
 
-.link-recuperar {
-    display: block;
-    text-align: right;
-    margin: 10px 0 15px;
-    color: var(--cor-branca);
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.link-recuperar:hover {
-    color: cyan;
-    text-decoration: underline;
-}
