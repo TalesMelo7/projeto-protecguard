@@ -198,6 +198,30 @@ body {
   width: 100%;
 }
 
+#mensagem-feedback {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    width: 80%; /* Ou o que se ajustar ao seu layout */
+    max-width: 400px; /* Limite a largura */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mensagem-feedback.sucesso {
+    background-color: #d4edda; /* Verde claro */
+    color: #155724;      /* Verde escuro */
+    border: 1px solid #c3e6cb;
+}
+
+#mensagem-feedback.erro {
+    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24;      /* Vermelho escuro */
+    border: 1px solid #f5c6cb;
+}
 
 .link-esqueci-senha {
     text-decoration: none;

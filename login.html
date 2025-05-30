@@ -31,7 +31,7 @@
         <div class="pagina-login">
             <div class="fundo-overlay"></div>
             <div class="conteudo-formulario">
-                <form class="formulario">
+                <form class="formulario" method="POST">
                     <h2 class="subtitulo-login">Login</h2>
                     <label class="label-texto" for="usuario">Usuário</label>
                     <input class="input-login" type="text" id="usuario" name="usuario" required>
@@ -41,7 +41,8 @@
                         <input type="checkbox" id="manter-conectado" name="manter-conectado" value="sim">
                         <label for="manter-conectado" class="label-manter-conectado">Manter-me conectado</label>
                       </div>
-                    <button onclick="entrar()" type="submit">Entrar</button>
+                      <div id="mensagem-feedback" class="mensagem"></div> <button type="submit">Entrar</button>
+                    <!-- <button onclick="entrar()" type="submit">Entrar</button> -->
                     <div class="botoes-form">
                       <a class="link-esqueci-senha" href="recuperar-senha.html">Esqueci minha senha</a>
                       <span class="barra-span">|</span>
@@ -57,6 +58,6 @@
       <p class="rodape-texto">© 2024 ProtecGuard. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="app.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>

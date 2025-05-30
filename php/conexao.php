@@ -1,10 +1,17 @@
 <?php
-// TESTE DEFINITIVO PARA VER SE ESTE ARQUIVO ESTÁ SENDO EXECUTADO PELO SERVIDOR
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-$mensagemUnica = "CONFIRMADO! O ARQUIVO EM C:\\xampp\\htdocs\\protecguard\\php\\conexao.php FOI CARREGADO PELO NAVEGADOR. Data e Hora: " . date("Y-m-d H:i:s");
+define('DB_SERVIDOR', 'localhost');
+define('DB_USUARIO', 'root');
+define('DB_SENHA', '');
+define('DB_NOME_BANCO', 'protecguard');
 
-die($mensagemUnica); // A função die() para o script aqui e mostra a mensagem.
+$conexao = mysqli_connect(DB_SERVIDOR, DB_USUARIO, DB_SENHA, DB_NOME_BANCO);
 
-// NADA ABAIXO DESTA LINHA SERÁ EXECUTADO NESTE TESTE.
-// O código original da conexão está comentado ou removido para este teste.
+if ($conexao === false) {
+    die("Falha crítica na conexão com o banco de dados: " . mysqli_connect_error());
+}
+
+mysqli_set_charset($conexao, "utf8mb4");
 ?>

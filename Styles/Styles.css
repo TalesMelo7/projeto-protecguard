@@ -92,7 +92,7 @@ form button:hover {
 }
 
 .divisor-diagonal {
-    margin: 0 50%;
+    margin: 0 30%;
     width: 50%;
     height: 0.125rem;
     background-color: var(--cor-de-fundo);

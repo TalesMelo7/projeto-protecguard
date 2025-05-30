@@ -1,3 +1,6 @@
+<?php
+require_once 'php/verifica_login_auto.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,14 +12,19 @@
 <body>
     <header class="cabecalho-principal">
         <div class="container">
-                <img class="cabecalho-img" src="images/logo.png" alt="Imagem do Logo">
+            <img class="cabecalho-img" src="images/logo.png" alt="Imagem do Logo">
             <nav>
                 <ul>
                     <li><a href="#inicio">Home</a></li>
                     <li><a href="#divisor">Alarmes</a></li>
                     <li><a href="#divisor2">Câmeras</a></li>
                     <li><a href="#divisor3">Sistemas</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+                        <li><span>Olá, <?php echo htmlspecialchars($_SESSION['usuario']); ?>!</span></li>
+                        <li><a href="php/sair.php">Sair</a></li>
+                    <?php else: ?>
+                        <li><a href="login.html">Login</a></li>
+                    <?php endif; ?>
                 </ul>
             </nav>
         </div>
