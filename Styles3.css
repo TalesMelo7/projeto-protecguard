@@ -23,6 +23,7 @@ body {
     margin: 0;
     height: 100vh;
     background-color: var(--cor-de-fundo);
+    overflow: hidden;
 }
 
 .formulario {
@@ -128,6 +129,7 @@ body {
     max-width: 1100px;
     margin: 15.62rem auto;
     padding: 5rem;
+    bottom: 10%;
     background-color: var(--cor-de-fundo);
     border-radius: 0.6rem;
     box-shadow: 0 0 2rem #000000;
@@ -199,6 +201,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     background-color: var(--cor-do-rodape);
     padding: 1%;
     width: 100%;
