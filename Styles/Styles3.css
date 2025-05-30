@@ -64,9 +64,9 @@ body {
 }
 
 .divisor-diagonal {
-    margin-left: 1050px;
+    margin-left: 65.63rem;
     width: 40%;
-    height: 2px;
+    height: 0.13rem;
     background-color: #1E90FF;
     position: static;
     transform: skewY(-50deg);
@@ -126,7 +126,7 @@ body {
 }
 
 .pagina-recuperar {
-    max-width: 1100px;
+    max-width: 68.75rem;
     margin: 15.62rem auto;
     padding: 5rem;
     background-color: var(--cor-de-fundo);
@@ -145,7 +145,7 @@ body {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.644);
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 0.63rem;
 }
 
 .pagina-recuperar form button {
@@ -155,7 +155,7 @@ body {
     color: var(--cor-branca);
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.31rem;
     border: 0.06rem solid #A3C1D3;
     background-color: var(--cor-do-rodape);
 }
@@ -180,7 +180,7 @@ body {
     margin-top: 0.5rem;
     box-sizing: border-box;
     border: 0.06rem solid #A3C1D3;
-    border-radius: 5px;
+    border-radius: 0.31rem;
     background-color: var(--cor-do-rodape);
     color: var(--cor-branca);
 }
@@ -193,15 +193,31 @@ body {
     text-align: center;
     align-items: center;
     margin: 0 29%;
-    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+.rodape-recuperar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-do-rodape);
+    padding: 1%;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--cor-branca);
+    font-size: 0.88rem;
+}
+
+.rodape-texto {
+    font-family: var(--fonte-secundaria);
 }
 
 .link-recuperar {
     text-align: right;
-    margin: 10px 0 15px;
+    margin: 0.63rem 0 0.94rem;
     color: var(--cor-branca);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.13rem;
     transition: color 0.3s ease;
 }
 
