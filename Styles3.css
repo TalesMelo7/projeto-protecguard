@@ -150,7 +150,7 @@ body {
 .pagina-recuperar form button {
     width: 20%;
     padding: 1%;
-    margin: 3% 0 0.5% 0;
+    margin: 3% 0 0.9% 0;
     color: var(--cor-branca);
     border: none;
     cursor: pointer;
@@ -195,13 +195,6 @@ body {
     font-size: 20px;
 }
 
-.botoes-form {
-    padding: 2%;
-    width: 100%;
-    font-size: 1.1rem;
-    margin-right: 3%;
-}
-
 .rodape-recuperar {
     display: flex;
     align-items: center;
@@ -224,7 +217,7 @@ body {
     margin: 10px 0 15px;
     color: var(--cor-branca);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 18px;
     transition: color 0.3s ease;
 }
 
