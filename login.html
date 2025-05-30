@@ -29,7 +29,7 @@
     <div class="login">
       <div class="conteudo-principal">
         <div class="pagina-login">
-            <div class="fundo-overlay"></div> <!-- Layer escura sobre o fundo -->
+            <div class="fundo-overlay"></div>
             <div class="conteudo-formulario">
                 <form class="formulario">
                     <h2 class="subtitulo-login">Login</h2>
@@ -37,11 +37,15 @@
                     <input class="input-login" type="text" id="usuario" name="usuario" required>
                     <label class="label-texto" for="senha">Senha</label>
                     <input class="input-login" type="password" id="senha" name="senha" required>
+                      <div class="opcoes-login">
+                        <input type="checkbox" id="manter-conectado" name="manter-conectado" value="sim">
+                        <label for="manter-conectado" class="label-manter-conectado">Manter-me conectado</label>
+                      </div>
                     <button onclick="entrar()" type="submit">Entrar</button>
                     <div class="botoes-form">
                       <a class="link-esqueci-senha" href="recuperar-senha.html">Esqueci minha senha</a>
                       <span class="barra-span">|</span>
-                      <a class="link-esqueci-senha" href="Criar-conta.html">Criar minha conta</a>
+                      <a class="link-esqueci-senha" href="cadastro.html">Criar minha conta</a>
                     </div>      
                 </form>
             </div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cadastro - ProtecGuard</title>
+    <link rel="stylesheet" href="Styles2.css" />
+</head>
+<body>
+    <header class="cabecalho-principal">
+        <div class="container">
+            <div class="logo-empresa">
+                <a href="index.html"><img src="images/logo.png" alt="Imagem do Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="alarmes.html">Alarmes</a></li>
+                    <li><a href="cameras.html">Câmeras</a></li>
+                    <li><a href="sistemas.html">Sistemas</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="divisor-diagonal"></div>
+    </header>
+
+    <main>
+    <div class="login">
+      <div class="conteudo-principal">
+        <div class="pagina-login">
+            <div class="fundo-overlay"></div> <!-- Layer escura sobre o fundo -->
+            <div class="conteudo-formulario">
+                <form class="formulario">
+                    <h2 class="subtitulo-login">Cadastre-se</h2>
+                    <label class="label-texto" for="usuario">Usuário</label>
+                    <input class="input-login" type="text" id="usuario" name="usuario" required>
+                    <label class="label-texto" for="senha">Senha</label>
+                    <input class="input-login" type="password" id="senha" name="senha" required>
+                    <button onclick="entrar()" type="submit">Entrar</button>
+                    <div class="botoes-form">
+                      <a class="link-esqueci-senha" href="login.html">Já possui uma conta?</a>
+                    </div>      
+                </form>
+            </div>
+        </div>    
+      </div>
+    </div>
+    </main>
+
+    <footer class="rodape-login">
+        <p class="rodape-texto">© 2024 ProtecGuard. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

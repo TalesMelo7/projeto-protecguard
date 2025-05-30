@@ -176,17 +176,32 @@ body {
     margin: 0 29%;
 }
 
-.botoes-form {
-    padding: 2%;
-    width: 100%;
-    font-size: 1.1rem;
-    margin-right: 3%;
+/* Adicione ao seu Styles2.css */
+
+.opcoes-login {
+  display: flex; /* Alinha o checkbox e o label na mesma linha */
+  align-items: center; /* Centraliza verticalmente */
+  width: 27.5%; /* Ocupa a largura do container do formulário */
+  margin: 0.5rem 4rem 1rem 0;
 }
+
+.opcoes-login input[type="checkbox"] {
+  margin: 0;
+  padding: 5%;
+}
+
+.label-manter-conectado {
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-branca);
+  font-size: 0.95rem; /* Tamanho um pouco menor */
+  margin: 0;
+  width: 100%;
+}
+
 
 .link-esqueci-senha {
     text-decoration: none;
     color: var(--cor-branca);
-    margin-top: 3rem;
     font-family: var(--fonte-secundaria);
 }
 
