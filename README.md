@@ -15,9 +15,10 @@ A interface é composta por um menu...
 
 ## 🚧 Melhorias Possíveis:
 
-- **Adicionar página de cadastro de usuário**
-- **Adicionar base de dados para logins**
-- **Corrigir altura viewport página recuperar-senha.html**
+- **Adicionar responsividade para as páginas**
+- **Opções para selecionar orçamento**
+- **Sistema de cadastro**
+- **Ver cookies de login salvos no navegador Opera**
 - **Estilizar página de alarmes**
 - **terminar a estilização da página de câmeras**
 - **Estilizar página de sistemas**
