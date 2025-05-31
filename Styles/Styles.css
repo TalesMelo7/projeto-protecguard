@@ -92,8 +92,8 @@ form button:hover {
 }
 
 .divisor-diagonal {
-    margin: 0 30%;
-    width: 50%;
+    margin: 0 52%;
+    width: 40%;
     height: 0.125rem;
     background-color: var(--cor-de-fundo);
     position: static;
