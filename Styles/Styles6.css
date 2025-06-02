@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-de-fundo: #1E90FF;
+    --cor-do-rodape: #152535;
+    --cor-branca: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+
+    --fonte-primaria: 'Krona one', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+
+    --fonte-primaria: 'Krona one', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--cor-de-fundo);
+}
+
+.cabecalho-principal {
+    background: linear-gradient(to right, #000, #1E90FF);
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cabecalho-principal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.3% 0;
+}
+
+.divisor-diagonal {
+    margin: 0 52%;
+    width: 40%;
+    height: 0.125rem;
+    background-color: var(--cor-de-fundo);
+    position: static;
+    transform: skewY(-50deg);
+    transform-origin: top left;
+}
+
+.logo-empresa img {
+    height: 1.875rem;
+}
+
+.cabecalho-principal nav ul {
+    list-style-type: none;
+    display: flex;
+    font-family: var(--fonte-secundaria);
+}
+
+.cabecalho-principal nav ul li {
+    margin: 0 1.4rem;
+}
+
+.cabecalho-principal img {
+    width: 100%;
+    height: 12.5rem;
+    margin-right: 1.875rem;
+    margin-top: -2.5rem;
+    margin-bottom: -3.75rem;
+}
+
+.cabecalho-principal nav ul li a {
+    position: flex;
+    margin-right: 0.625rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    background-color: rgba(22, 21, 21, 0.5);
+    border-radius: 0.3125rem;
+}
+
+.rodape-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-do-rodape);
+    padding: 1%;
+    height: 3.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--cor-branca);
+    font-size: 0.875rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.rodape-texto {
+    font-family: var(--fonte-secundaria);
+}
