@@ -112,7 +112,7 @@ body {
 }
 
 .recuperar {
-    flex: 1; /* Faz o .login crescer para ocupar o espaço disponível */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     background-color: var(--cor-de-fundo);

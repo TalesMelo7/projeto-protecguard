@@ -1,8 +1,8 @@
 <?php
-// Iniciar a sessão PHP no topo
+
 session_start();
 
-require_once 'conexao.php'; // Inclui a conexão com o banco
+require_once 'conexao.php'; 
 
 function gerar_token_seguro($tamanho = 32) {
     return bin2hex(random_bytes($tamanho));
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $seletor = gerar_token_seguro(12);
                             $validador = gerar_token_seguro(32);
                             $validador_hash = password_hash($validador, PASSWORD_DEFAULT);
-                            $expira_em_timestamp = time() + (86400 * 30); // 30 dias
+                            $expira_em_timestamp = time() + (86400 * 30); 
                             $expira_em_data_db = date('Y-m-d H:i:s', $expira_em_timestamp);
 
                             $sql_delete_tokens = "DELETE FROM tokens_lembrar_me WHERE usuario_id = ?";
@@ -58,8 +58,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             if ($stmt_token = mysqli_prepare($conexao, $sql_insert_token)) {
                                 mysqli_stmt_bind_param($stmt_token, "isss", $id_usuario_db, $seletor, $validador_hash, $expira_em_data_db);
                                 if(mysqli_stmt_execute($stmt_token)){
-                                    setcookie('lembrar_me_seletor', $seletor, $expira_em_timestamp, '/', '', false, true); // Mude secure para true em HTTPS
-                                    setcookie('lembrar_me_validador', $validador, $expira_em_timestamp, '/', '', false, true); // Mude secure para true em HTTPS
+                                    setcookie('lembrar_me_seletor', $seletor, $expira_em_timestamp, '/', '', false, true); 
+                                    setcookie('lembrar_me_validador', $validador, $expira_em_timestamp, '/', '', false, true); 
                                     $mensagem_resposta .= " Você será lembrado.";
                                 } else {
                                     error_log("Falha ao inserir token lembrar-me para usuario_id: " . $id_usuario_db . " Erro: " . mysqli_stmt_error($stmt_token));

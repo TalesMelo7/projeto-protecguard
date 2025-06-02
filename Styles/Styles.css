@@ -380,7 +380,7 @@ section {
 
 .link-cameras {
     display: inline-block;
-    background-color: var(--cor-do-rodape); /* Cor consistente com botões */
+    background-color: var(--cor-do-rodape); 
     padding: 0.625rem 0.625rem;
     border-radius: 0.4375rem;
 }
@@ -472,7 +472,7 @@ section {
 
 .link-sistemas {
     display: inline-block;
-    background-color: var(--cor-do-rodape); /* Cor consistente com botões */
+    background-color: var(--cor-do-rodape); 
     padding: 0.625rem 0.625rem;
     border-radius: 0.4375rem;
 }
@@ -508,7 +508,7 @@ section img {
     background-color: var(--cor-branca);
 }
 
-/* Estiliza o footer */
+
 
 .rodape-index {
     display: flex;

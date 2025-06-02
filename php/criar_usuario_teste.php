@@ -1,9 +1,9 @@
 <?php
-// ATIVAR A EXIBIÇÃO DE TODOS OS ERROS
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once 'conexao.php'; // $conexao estará disponível
+require_once 'conexao.php'; 
 
 echo "<h1>Criador de Usuário de Teste (Após Recriar BD)</h1>";
 
