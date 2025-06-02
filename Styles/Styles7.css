@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     margin: 0;
     background-color: var(--cor-de-fundo);
-    min-height: 100vh;
+    height: 100vh;
     padding-bottom: 5.5rem;
     box-sizing: border-box;
 }
@@ -114,12 +114,11 @@ body {
     background: black;
 }
 
-.login {
+.cadastro {
     flex: 1;
     display: flex;
     flex-direction: column;
     background-color: var(--cor-de-fundo);
-    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -128,7 +127,7 @@ body {
     text-align: center;
 }
 
-.pagina-login {
+.pagina-cadastro {
     max-width: 68.75rem;
     margin: 15.62rem auto;
     padding: 5rem;
@@ -139,7 +138,7 @@ body {
     background: url('../images/empresa-seguranca.jpg') no-repeat center center/cover;
 }
 
-.pagina-login .fundo-overlay {
+.pagina-cadastro .fundo-overlay {
     content: "";
     position: absolute;
     top: 0;
@@ -151,14 +150,14 @@ body {
     border-radius: 0.625rem;
 }
 
-.subtitulo-login {
+.subtitulo-cadastro {
     font-family: var(--fonte-primaria);
     padding: 0;
     font-size: 2rem;
     margin: 0 0 5% 0;
 }
 
-.pagina-login form input {
+.pagina-cadastro form input {
     max-width: 37.5rem;
     width: 50%;
     padding: 0.6rem;
@@ -179,19 +178,19 @@ body {
     margin: 0 29%;
 }
 
-.opcoes-login {
+.opcoes-cadastro {
   display: flex;
   align-items: center;
   width: 27.5%;
   margin: 0.5rem 4rem 1rem 0;
 }
 
-.opcoes-login input[type="checkbox"] {
+.opcoes-cadastro input[type="checkbox"] {
   margin: 0;
   padding: 5%;
 }
 
-.label-manter-conectado {
+.label-cadastro {
   font-family: var(--fonte-secundaria);
   color: var(--cor-branca);
   font-size: 0.95rem;
@@ -230,18 +229,18 @@ body {
     margin: -3% 0 5% 0;
 }
 
-.div_link-esqueci-senha {
+.div_link-cadastro{
     padding: 3% 0 0 0;
 }
 
-.link-esqueci-senha {
+.link-cadastro {
     text-decoration: none;
     color: var(--cor-branca);
     font-family: var(--fonte-secundaria);
     margin-top: 5% 0 0 0;
 }
 
-.link-esqueci-senha:hover {
+.link-cadastro:hover {
     color: cyan;
     transition: color 0.3s ease;
 }
@@ -250,19 +249,19 @@ body {
     color: white;
 }
 
-.pagina-login h2 {
+.pagina-cadastro h2 {
     text-align: center;
     margin-bottom: 1.25rem;
     color: var(--cor-branca);
 }
 
-.pagina-login form label {
+.pagina-cadastro form label {
     display: block;
     margin-top: 0.625rem;
     color: var(--cor-branca);
 }
 
-.pagina-login form button {
+.pagina-cadastro form button {
     width: 20%;
     padding: 1%;
     margin: 3% 0 0.5% 0;
@@ -274,23 +273,20 @@ body {
     background-color: var(--cor-do-rodape);
 }
 
-.pagina-login form button:hover {
+.pagina-cadastro form button:hover {
     background-color: black;
 }
 
-.rodape-login {
+.rodape-cadastro {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--cor-do-rodape);
-    padding: 0.5rem 1rem;
+    padding: 1%;
     width: 100%;
     box-sizing: border-box;
     color: var(--cor-branca);
     font-size: 0.875rem;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
 }
 
 .rodape-texto {
