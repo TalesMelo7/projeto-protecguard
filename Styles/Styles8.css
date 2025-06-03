@@ -201,7 +201,7 @@ main {
     text-decoration: underline; 
 }
 
-.rodape-redefinir {
+.rodape {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -97,7 +97,7 @@ mysqli_close($conexao);
         </div>
     </main>
 
-    <footer class="rodape-redefinir">
+    <footer class="rodape">
         <p class="rodape-texto">© 2024 ProtecGuard. Todos os direitos reservados.</p>
     </footer>
 

@@ -197,7 +197,7 @@ body {
     font-size: 1.25rem;
 }
 
-.rodape-recuperar {
+.rodape {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,27 +221,12 @@ body {
     margin: 0.63rem 0 0.94rem;
     color: var(--cor-branca);
     text-decoration: none;
-    font-size: 1.13rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
+    font-family: var(--fonte-secundaria);
 }
 
 .link-recuperar:hover {
     color: cyan;
     text-decoration: underline;
-}
-
-.rodape-recuperar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--cor-do-rodape);
-    padding: 1%;
-    width: 100%;
-    box-sizing: border-box;
-    color: var(--cor-branca);
-    font-size: 0.875rem;
-}
-
-.rodape-texto {
-    font-family: var(--fonte-secundaria);
 }

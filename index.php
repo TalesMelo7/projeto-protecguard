@@ -120,7 +120,7 @@ require_once 'php/verifica_login_auto.php';
     </section>
 
     <footer>
-        <div class="rodape-index">
+        <div class="rodape">
             <p class="rodape-texto">© 2024 ProtecGuard. Todos os direitos reservados.</p>
         </div>
     </footer>

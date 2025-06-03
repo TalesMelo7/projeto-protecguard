@@ -314,7 +314,7 @@ main {
     background-color: black;
 }
 
-.rodape-login {
+.rodape {
     display: flex;
     align-items: center;
     justify-content: center;
