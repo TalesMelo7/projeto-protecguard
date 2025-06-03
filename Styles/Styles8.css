@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-de-fundo: #1E90FF;
+    --cor-do-rodape: #152535;
+    --cor-branca: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+
+
+    --fonte-primaria: 'Krona one', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: #1E90FF;
+    padding-top: 80px; 
+    font-family: var(--fonte-secundaria); 
+    box-sizing: border-box;
+}
+
+main {
+    flex-grow: 1; /* Faz o main expandir e ocupar o espaço disponível */
+    display: flex; /* Opcional: para centralizar o conteúdo dentro do main */
+    flex-direction: column; /* Opcional: para centralizar o conteúdo dentro do main */
+    align-items: center; /* Opcional: para centralizar o conteúdo dentro do main horizontalmente */
+    justify-content: center; /* Opcional: para centralizar o conteúdo dentro do main verticalmente */
+    width: 100%; /* Para que o align-items funcione corretamente nos filhos */
+}
+
+.cabecalho-principal {
+    background: linear-gradient(to right, #000, #1E90FF);
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+.cabecalho-principal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.3% 0;
+}
+
+#divisor,
+#divisor2,
+#divisor3,
+#divisor4 {
+    z-index: 100;
+    height: 0.2rem;
+    margin: 0.20% 0;
+    border-radius: 1rem;
+}
+
+.divisor-diagonal {
+    margin-left: 65.625rem;
+    width: 100%;
+    height: 0.125rem;
+    background-color: #1E90FF;
+    position: static;
+    transform: skewY(-50deg);
+    transform-origin: top left;
+}
+
+.logo-empresa img {
+    height: 1.875rem;
+}
+
+.cabecalho-principal nav ul {
+    list-style-type: none;
+    display: flex;
+    font-family: var(--fonte-secundaria);
+}
+
+.cabecalho-principal nav ul li {
+    margin: 0 1.4rem;
+}
+
+.cabecalho-principal img {
+    width: 21.875rem;
+    height: 12.5rem;
+    margin-right: 1.875rem;
+    margin-top: -2.5rem;
+    margin-bottom: -3.75rem;
+}
+
+.cabecalho-principal nav ul li a {
+    position: flex;
+    margin-right: 0.625rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    background-color: rgba(22, 21, 21, 0.5);
+    border-radius: 0.3125rem;
+}
+
+.cabecalho-principal nav ul li a:hover {
+    background: black;
+}
+
+.container-redefinir { 
+    /* Seus estilos para .container-redefinir estão bons. */
+    /* A centralização dele agora pode ser mais influenciada pelo <main> com flex. */
+    /* Você pode ajustar as margens se necessário, ex: margin-bottom: 2rem; para dar um respiro antes do footer. */
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 2rem 3rem; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+    width: 100%; 
+    max-width: 450px; 
+    color: #fff; 
+    margin-top: 2rem; /* Exemplo de ajuste de margem */
+    margin-bottom: 2rem; /* Exemplo de ajuste de margem */
+}
+
+.container-redefinir h2 { 
+    text-align: center; 
+    margin-bottom: 1.5rem; 
+    font-family: var(--fonte-primaria); 
+}
+
+.container-redefinir label { 
+    display: block; 
+    margin-top: 1rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.container-redefinir input[type="password"] { 
+    width: 100%; 
+    padding: 0.75rem; 
+    border: 1px solid #A3C1D3; 
+    border-radius: 5px; 
+    background-color: #152535; 
+    color: #fff; 
+    box-sizing: border-box; 
+}
+
+.container-redefinir button[type="submit"] { 
+    width: 100%; 
+    padding: 0.75rem; 
+    margin-top: 1.5rem; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    font-weight: bold; 
+}
+
+.container-redefinir button[type="submit"]:hover { 
+    background-color: #0056b3; 
+}
+
+#mensagem-feedback-redefinir { 
+    padding: 10px; 
+    margin-top: 15px; 
+    border-radius: 5px; 
+    text-align: center; 
+    font-weight: bold; 
+}
+
+#mensagem-feedback-redefinir.sucesso { 
+    background-color: #d4edda; 
+    color: #155724; 
+    border: 1px solid #c3e6cb; 
+}
+
+#mensagem-feedback-redefinir.erro { 
+    background-color: #f8d7da; 
+    color: #721c24; 
+    border: 1px solid #f5c6cb; 
+}
+
+.link-voltar { 
+    text-align: center; 
+    margin-top: 1rem; 
+}
+
+.link-voltar a { 
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.link-voltar a:hover { 
+    text-decoration: underline; 
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-do-rodape);
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--cor-branca);
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+.rodape-texto {
+    font-family: var(--fonte-secundaria);
+}
+
