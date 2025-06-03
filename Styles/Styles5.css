@@ -108,3 +108,90 @@ body {
 .rodape-texto {
     font-family: var(--fonte-secundaria);
 }
+
+.bloco {
+    margin: 4rem auto;
+    max-width: 85%;
+    background-color: var(--cor-do-rodape);
+    border-radius: 1rem;
+    border: 0.5rem solid #152535;
+    padding: 2rem;
+    color: white;
+    font-family: var(--fonte-secundaria);
+}
+
+.bloco-imagem-direita {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bloco-imagem-direita img {
+    max-width: 40%;
+    height: auto;
+    border: 5px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.imagem-sistema {
+    max-width: 40%;
+    height: auto;
+    border: 5px solid #FFFFFF;
+    border-radius: 10px;
+    margin-left: 30rem;
+}
+
+
+.imagem-sistema2 {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.titulo {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+}
+
+.texto {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.lista {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+
+.texto1, .texto2, .texto3 {
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: var(--fonte-secundaria);
+    color: white;
+    background-color: var(--cor-do-rodape);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.texto1 {
+    border: 2rem solid var(--cor-do-rodape);
+    border-radius: 3rem;
+}
+
+.texto2 {
+    max-width: fit-content; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 1rem solid var(--cor-do-rodape);
+}
+
+.texto3 {
+    border: 1rem solid transparent;
+}
