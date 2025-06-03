@@ -28,7 +28,7 @@ body {
 }
 
 main {
-    padding-top: 160px;
+    padding-top: 10rem;
 }
 
 .cabecalho-principal {
@@ -130,15 +130,15 @@ main {
 .bloco-imagem-direita img {
     max-width: 40%;
     height: auto;
-    border: 5px solid #FFFFFF;
-    border-radius: 10px;
+    border: 0.313rem solid #FFFFFF;
+    border-radius: 0.625rem;
 }
 
 .imagem-sistema {
     max-width: 40%;
     height: auto;
-    border: 5px solid #FFFFFF;
-    border-radius: 10px;
+    border: 0.3125rem solid #FFFFFF;
+    border-radius: 0.625rem;
     margin-left: 30rem;
 }
 

@@ -22,18 +22,18 @@ body {
     flex-direction: column; 
     min-height: 100vh; 
     background-color: #1E90FF;
-    padding-top: 80px; 
+    padding-top: 5rem; 
     font-family: var(--fonte-secundaria); 
     box-sizing: border-box;
 }
 
 main {
-    flex-grow: 1; /* Faz o main expandir e ocupar o espaço disponível */
-    display: flex; /* Opcional: para centralizar o conteúdo dentro do main */
-    flex-direction: column; /* Opcional: para centralizar o conteúdo dentro do main */
-    align-items: center; /* Opcional: para centralizar o conteúdo dentro do main horizontalmente */
-    justify-content: center; /* Opcional: para centralizar o conteúdo dentro do main verticalmente */
-    width: 100%; /* Para que o align-items funcione corretamente nos filhos */
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
 }
 
 .cabecalho-principal {
@@ -114,18 +114,15 @@ main {
 }
 
 .container-redefinir { 
-    /* Seus estilos para .container-redefinir estão bons. */
-    /* A centralização dele agora pode ser mais influenciada pelo <main> com flex. */
-    /* Você pode ajustar as margens se necessário, ex: margin-bottom: 2rem; para dar um respiro antes do footer. */
     background-color: rgba(0, 0, 0, 0.7); 
     padding: 2rem 3rem; 
-    border-radius: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+    border-radius: 0.625rem; 
+    box-shadow: 0 0 1.25rem rgba(0,0,0,0.5); 
     width: 100%; 
-    max-width: 450px; 
+    max-width: 28.125rem; 
     color: #fff; 
-    margin-top: 2rem; /* Exemplo de ajuste de margem */
-    margin-bottom: 2rem; /* Exemplo de ajuste de margem */
+    margin-top: 2rem; 
+    margin-bottom: 2rem; 
 }
 
 .container-redefinir h2 { 
@@ -143,8 +140,8 @@ main {
 .container-redefinir input[type="password"] { 
     width: 100%; 
     padding: 0.75rem; 
-    border: 1px solid #A3C1D3; 
-    border-radius: 5px; 
+    border: 0.063rem solid #A3C1D3; 
+    border-radius: 0.313rem; 
     background-color: #152535; 
     color: #fff; 
     box-sizing: border-box; 
@@ -157,7 +154,7 @@ main {
     background-color: #007bff; 
     color: white; 
     border: none; 
-    border-radius: 5px; 
+    border-radius: 0.313rem; 
     cursor: pointer; 
     font-size: 1rem; 
     font-weight: bold; 
@@ -168,9 +165,9 @@ main {
 }
 
 #mensagem-feedback-redefinir { 
-    padding: 10px; 
-    margin-top: 15px; 
-    border-radius: 5px; 
+    padding: 0.625rem; 
+    margin-top: 0.938rem; 
+    border-radius: 0.313rem; 
     text-align: center; 
     font-weight: bold; 
 }
@@ -178,13 +175,13 @@ main {
 #mensagem-feedback-redefinir.sucesso { 
     background-color: #d4edda; 
     color: #155724; 
-    border: 1px solid #c3e6cb; 
+    border: 0.063rem solid #c3e6cb; 
 }
 
 #mensagem-feedback-redefinir.erro { 
     background-color: #f8d7da; 
     color: #721c24; 
-    border: 1px solid #f5c6cb; 
+    border: 0.063rem solid #f5c6cb; 
 }
 
 .link-voltar { 

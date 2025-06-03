@@ -1,5 +1,5 @@
 <?php
-require_once 'php/conexao.php'; // Inclui a conexão com o banco
+require_once 'php/conexao.php'; 
 
 $token_valido = false;
 $mensagem_erro = '';

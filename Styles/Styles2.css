@@ -149,12 +149,9 @@ main {
     z-index: 1;
 }
 
-.pagina-login form button { /* Seu botão Entrar */
-    width: 50%; /* Talvez aumentar um pouco a largura se desejar */
-    /* padding: 1%; */ /* Já definido */
-    /* margin: 3% 0 0.5% 0; /* Sua margem original */
-    /* A margem do botão agora pode ser controlada pelo 'gap' do .botoes-form ou uma margem própria */
-    margin-bottom: 1rem; /* Adicionar espaço abaixo do botão antes dos links */
+.pagina-login form button { 
+    width: 50%; 
+    margin-bottom: 1rem; 
 }
 
 .pagina-login .fundo-overlay {
@@ -222,26 +219,25 @@ main {
   width: 100%;
 }
 
-.botoes-form { /* Div que contém o botão Entrar e os links Esqueci/Criar */
+.botoes-form { 
     width: 100%;
     font-size: 1.1rem;
-    /* margin: -3% 0 5% 0; /* Sua margem original com valor negativo no topo */
-    margin-top: 1.5rem; /* Adicionar margem superior positiva */
-    margin-bottom: 1rem; /* Ajustar margem inferior se necessário */
-    display: flex; /* Para organizar botão e links internos, se necessário */
-    flex-direction: column; /* Para empilhar botão e links */
-    align-items: center; /* Para centralizar */
+    margin-top: 1.5rem; 
+    margin-bottom: 1rem; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
 }
 
 #mensagem-feedback {
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    padding: 0.625rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.938rem;
+    border-radius: 0.313rem;
     text-align: center;
     font-weight: bold;
     width: 80%;
-    max-width: 400px;
+    max-width: 25rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -249,13 +245,13 @@ main {
 #mensagem-feedback.sucesso {
     background-color: #d4edda;
     color: #155724;
-    border: 1px solid #c3e6cb;
+    border: 0.063rem solid #c3e6cb;
 }
 
 #mensagem-feedback.erro {
     background-color: #f8d7da;
     color: #721c24;
-    border: 1px solid #f5c6cb;
+    border: 0.063rem solid #f5c6cb;
 }
 
 .botoes-form {
