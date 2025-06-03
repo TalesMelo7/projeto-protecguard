@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $token = bin2hex(openssl_random_pseudo_bytes(32));
             }
             
-            $expira_em_timestamp = time() + 3600; // 1 hora
+            $expira_em_timestamp = time() + 3600; 
             $expira_em_data_db = date('Y-m-d H:i:s', $expira_em_timestamp);
 
             $sql_delete_old = "DELETE FROM password_resets WHERE email = ?";

@@ -45,8 +45,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                                 mysqli_stmt_execute($stmt_delete_specific);
                                 mysqli_stmt_close($stmt_delete_specific);
                             }
-                            setcookie('lembrar_me_seletor', '', time() - 3600, '/'); // Expirar cookie
-                            setcookie('lembrar_me_validador', '', time() - 3600, '/'); // Expirar cookie
+                            setcookie('lembrar_me_seletor', '', time() - 3600, '/'); 
+                            setcookie('lembrar_me_validador', '', time() - 3600, '/'); 
                         }
                     }
                 }

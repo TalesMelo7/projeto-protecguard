@@ -1,6 +1,6 @@
 <?php
 // Incluir o arquivo de conexão com o banco de dados
-require_once 'conexao.php'; // A variável $conexao estará disponível aqui
+require_once 'conexao.php'; 
 
 // Definir o tipo de conteúdo da resposta para texto simples (para o fetch do JS)
 header('Content-Type: text/plain; charset=utf-8');
@@ -11,11 +11,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obter os dados do formulário e fazer uma limpeza básica
     $usuario = isset($_POST['usuario']) ? trim($_POST['usuario']) : '';
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-    $senha = isset($_POST['senha']) ? $_POST['senha'] : ''; // Senha não deve ter trim() inicialmente
+    $senha = isset($_POST['senha']) ? $_POST['senha'] : ''; 
     $confirmar_senha = isset($_POST['confirmar_senha']) ? $_POST['confirmar_senha'] : '';
 
-    // --- Validações ---
-    $erros = []; // Array para armazenar mensagens de erro
+    
+    $erros = []; 
 
     // 1. Verificar campos vazios
     if (empty($usuario)) {
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $erros[] = "A senha deve ter pelo menos 6 caracteres.";
     }
 
-    // Se não houver erros de validação básica até aqui, verificar no banco de dados
+    
     if (empty($erros)) {
         // 5. Verificar se o NOME DE USUÁRIO já existe
         $sql_check_usuario = "SELECT id FROM usuarios WHERE usuario = ?";

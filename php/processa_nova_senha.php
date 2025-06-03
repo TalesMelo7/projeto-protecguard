@@ -1,7 +1,7 @@
 <?php
-require_once 'conexao.php'; // Inclui a conexão com o banco de dados
+require_once 'conexao.php'; 
 
-// Define o tipo de conteúdo da resposta para texto simples
+
 header('Content-Type: text/plain; charset=utf-8');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
