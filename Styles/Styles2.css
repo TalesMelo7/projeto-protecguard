@@ -23,8 +23,15 @@ body {
     margin: 0;
     background-color: var(--cor-de-fundo);
     min-height: 100vh;
-    padding-bottom: 5.5rem;
+    padding-top: 5.5rem;
     box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .formulario {
@@ -34,7 +41,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 2;
-    gap: 0.4rem;
+    gap: 1rem;
 }
 
 .cabecalho-principal {
@@ -115,28 +122,39 @@ body {
 }
 
 .login {
-    flex: 1;
     display: flex;
     flex-direction: column;
     background-color: var(--cor-de-fundo);
-    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
 
 .conteudo-principal {
     text-align: center;
+    margin-top: 25%;
 }
 
 .pagina-login {
-    max-width: 68.75rem;
-    margin: 15.62rem auto;
-    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 3rem 10rem;
     background-color: var(--cor-de-fundo);
     border-radius: 0.6rem;
     box-shadow: 0 0 2rem #000000;
+    box-sizing: border-box;
     position: relative;
     background: url('../images/empresa-seguranca.jpg') no-repeat center center/cover;
+    z-index: 1;
+}
+
+.pagina-login form button { /* Seu botão Entrar */
+    width: 50%; /* Talvez aumentar um pouco a largura se desejar */
+    /* padding: 1%; */ /* Já definido */
+    /* margin: 3% 0 0.5% 0; /* Sua margem original */
+    /* A margem do botão agora pode ser controlada pelo 'gap' do .botoes-form ou uma margem própria */
+    margin-bottom: 1rem; /* Adicionar espaço abaixo do botão antes dos links */
 }
 
 .pagina-login .fundo-overlay {
@@ -155,12 +173,12 @@ body {
     font-family: var(--fonte-primaria);
     padding: 0;
     font-size: 2rem;
-    margin: 0 0 5% 0;
+    margin: 0 0 2rem 0;
 }
 
 .pagina-login form input {
     max-width: 37.5rem;
-    width: 50%;
+    width: 100%;
     padding: 0.6rem;
     margin-top: 0.5rem;
     box-sizing: border-box;
@@ -168,6 +186,11 @@ body {
     border-radius: 0.3125rem;
     background-color: var(--cor-do-rodape);
     color: var(--cor-branca);
+}
+
+.conteudo-formulario {
+    position: relative;
+    z-index: 2;
 }
 
 .label-texto {
@@ -182,8 +205,8 @@ body {
 .opcoes-login {
   display: flex;
   align-items: center;
-  width: 27.5%;
-  margin: 0.5rem 4rem 1rem 0;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
 }
 
 .opcoes-login input[type="checkbox"] {
@@ -195,8 +218,19 @@ body {
   font-family: var(--fonte-secundaria);
   color: var(--cor-branca);
   font-size: 0.95rem;
-  margin: 0;
+  margin: 0 30% 0 0;
   width: 100%;
+}
+
+.botoes-form { /* Div que contém o botão Entrar e os links Esqueci/Criar */
+    width: 100%;
+    font-size: 1.1rem;
+    /* margin: -3% 0 5% 0; /* Sua margem original com valor negativo no topo */
+    margin-top: 1.5rem; /* Adicionar margem superior positiva */
+    margin-bottom: 1rem; /* Ajustar margem inferior se necessário */
+    display: flex; /* Para organizar botão e links internos, se necessário */
+    flex-direction: column; /* Para empilhar botão e links */
+    align-items: center; /* Para centralizar */
 }
 
 #mensagem-feedback {
@@ -231,7 +265,8 @@ body {
 }
 
 .div_link-esqueci-senha {
-    padding: 3% 0 0 0;
+    padding: 8% 0 0 0;
+    gap: 4%;
 }
 
 .link-esqueci-senha {
@@ -239,6 +274,7 @@ body {
     color: var(--cor-branca);
     font-family: var(--fonte-secundaria);
     margin-top: 5% 0 0 0;
+    width: 100%;
 }
 
 .link-esqueci-senha:hover {
@@ -263,8 +299,8 @@ body {
 }
 
 .pagina-login form button {
-    width: 20%;
-    padding: 1%;
+    width: 30%;
+    padding: 2%;
     margin: 3% 0 0.5% 0;
     color: var(--cor-branca);
     border: none;
@@ -283,14 +319,12 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--cor-do-rodape);
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     width: 100%;
     box-sizing: border-box;
     color: var(--cor-branca);
     font-size: 0.875rem;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
+    flex-shrink: 0;
 }
 
 .rodape-texto {
