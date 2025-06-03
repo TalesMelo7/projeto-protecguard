@@ -18,9 +18,6 @@ A interface é composta por um menu...
 - **Adicionar responsividade para as páginas**
 - **Opções para selecionar orçamento**
 - **Ver cookies de login salvos no navegador Opera**
-- **Estilizar página de alarmes**
-- **terminar a estilização da página de câmeras**
-- **Estilizar página de sistemas**
 - **Permitir criar um orçamento somente com login ativo**
   
 ## 🛠 Como usar
