@@ -57,7 +57,7 @@ require_once 'php/verifica_login_auto.php';
                         <option value="cameras">Câmeras</option>
                         <option value="sistemas">Sistemas de Segurança</option>
                     </select>
-                    
+                    <form action="solicitar_orcamento.php" method="POST">
                     <button type="submit">Solicitar Orçamento</button>
                 </form>
             </div>
