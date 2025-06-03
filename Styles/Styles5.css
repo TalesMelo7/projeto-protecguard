@@ -27,6 +27,10 @@ body {
     background-color: var(--cor-de-fundo);
 }
 
+main {
+    padding-top: 160px;
+}
+
 .cabecalho-principal {
     background: linear-gradient(to right, #000, #1E90FF);
     padding: 0;
