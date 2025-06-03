@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cadastro - ProtecGuard</title>
-    <link rel="stylesheet" href="./Styles/Styles2.css" />
+    <link rel="stylesheet" href="./Styles/Styles7.css" />
 </head>
 <body>
     <header class="cabecalho-principal">
         <div class="container">
             <div class="logo-empresa">
-                <a href="index.html"><img src="images/logo.png" alt="Imagem do Logo"></a>
+                <a href="index.php"><img src="images/logo.png" alt="Imagem do Logo"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="alarmes.html">Alarmes</a></li>
                     <li><a href="cameras.html">Câmeras</a></li>
                     <li><a href="sistemas.html">Sistemas</a></li>
@@ -26,20 +26,25 @@
     </header>
 
     <main>
-    <div class="login">
+    <div class="cadastro">
       <div class="conteudo-principal">
-        <div class="pagina-login">
-            <div class="fundo-overlay"></div> <!-- Layer escura sobre o fundo -->
+        <div class="pagina-cadastro">
+            <div class="fundo-overlay"></div> 
             <div class="conteudo-formulario">
-                <form class="formulario">
-                    <h2 class="subtitulo-login">Cadastre-se</h2>
-                    <label class="label-texto" for="usuario">Usuário</label>
-                    <input class="input-login" type="text" id="usuario" name="usuario" required>
-                    <label class="label-texto" for="senha">Senha</label>
-                    <input class="input-login" type="password" id="senha" name="senha" required>
-                    <button onclick="entrar()" type="submit">Entrar</button>
-                    <div class="botoes-form">
-                      <a class="link-esqueci-senha" href="login.html">Já possui uma conta?</a>
+                <form id="form-cadastro" class="formulario"> <h2 class="subtitulo-cadastro">Cadastre-se</h2>
+                    <label class="label-texto" for="usuario-cadastro">Usuário</label> <input class="input-cadastro" type="text" id="usuario-cadastro" name="usuario" required>
+                    
+                    <label class="label-texto" for="email-cadastro">Email</label> <input class="input-cadastro" type="email" id="email-cadastro" name="email" required> <label class="label-texto" for="senha-cadastro">Senha</label> <input class="input-cadastro" type="password" id="senha-cadastro" name="senha" required>
+
+                    <label class="label-texto" for="confirmar-senha-cadastro">Confirmar Senha</label>
+                    <input class="input-cadastro" type="password" id="confirmar-senha-cadastro" name="confirmar_senha" required>
+                    
+                    <div id="mensagem-feedback-cadastro" style="text-align:center; margin-top:10px;"></div>
+
+                    <button type="submit">Cadastrar</button> 
+                    
+                    <div>
+                        <a class="link-cadastro" href="login.html" style="display:block; text-align:center; margin-top:15px;">Já possui uma conta? Faça login</a>
                     </div>      
                 </form>
             </div>
@@ -48,8 +53,9 @@
     </div>
     </main>
 
-    <footer class="rodape-login">
+    <footer class="rodape-cadastro">
         <p class="rodape-texto">© 2024 ProtecGuard. Todos os direitos reservados.</p>
     </footer>
+<script src="js/app_cadastro.js" defer></script>
 </body>
 </html>

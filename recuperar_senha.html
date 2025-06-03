@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Recuperar Senha - ProtecGuard</title>
+    <link rel="stylesheet" href="./Styles/Styles3.css" />
+</head>
+<body>
+    <header class="cabecalho-principal">
+        <div class="container">
+            <div class="logo-empresa">
+                <a href="index.php"><img src="images/logo.png" alt="Imagem do Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="alarmes.html">Alarmes</a></li>
+                    <li><a href="cameras.html">Câmeras</a></li>
+                    <li><a href="sistemas.html">Sistemas</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="divisor-diagonal"></div>
+    </header>
+
+    <main> <div class="conteudo-principal"> <div class="pagina-recuperar"> <div class="fundo-overlay"></div>
+                <div class="conteudo-formulario">
+                    <form id="form-recuperar-senha" class="formulario"> 
+                        <h2 class="subtitulo-recuperar">Recuperar Senha</h2>
+                        <p class="label-texto" style="font-size: 16px; margin-bottom: 3.5%;">
+                            Digite seu e-mail para enviarmos um link de redefinição de senha.
+                        </p>
+                        <label class="label-texto" for="email-recuperar">E-mail</label>
+                        <input class="input-recuperar" type="email" id="email-recuperar" name="email" required> 
+                        <div id="mensagem-feedback-recuperar" style="text-align:center; margin-top:10px; z-index:2; position:relative; color: white;"></div> 
+                        <button type="submit">Recuperar Senha</button> 
+                        <a href="login.html" class="link-recuperar" style="display:block; text-align:center; margin-top:15px;">Voltar ao Login</a>
+                    </form>
+                </div>
+            </div>    
+        </div>
+    </main>
+
+    <footer> <div class="rodape-recuperar"> <p class="rodape-texto">© 2024 ProtecGuard. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app_recuperar_senha.js" defer></script>
+</body>
+</html>

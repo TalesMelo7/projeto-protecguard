@@ -21,9 +21,10 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100vh;
     background-color: var(--cor-de-fundo);
-    overflow: hidden;
+    height: 100vh;
+    padding-bottom: 5.5rem;
+    box-sizing: border-box;
 }
 
 .formulario {
@@ -39,10 +40,12 @@ body {
 .cabecalho-principal {
     background: linear-gradient(to right, #000, #1E90FF);
     padding: 0;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
+    text-align: center;
 }
 
 .cabecalho-principal .container {
@@ -64,9 +67,9 @@ body {
 }
 
 .divisor-diagonal {
-    margin-left: 65.63rem;
-    width: 40%;
-    height: 0.13rem;
+    margin-left: 65.625rem;
+    width: 100%;
+    height: 0.125rem;
     background-color: #1E90FF;
     position: static;
     transform: skewY(-50deg);
@@ -111,25 +114,23 @@ body {
     background: black;
 }
 
-.recuperar {
-    flex: 1; 
+.cadastro {
+    flex: 1;
     display: flex;
     flex-direction: column;
     background-color: var(--cor-de-fundo);
-    height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 .conteudo-principal {
     text-align: center;
-    height: 100vh;
 }
 
-.pagina-recuperar {
+.pagina-cadastro {
     max-width: 68.75rem;
     margin: 15.62rem auto;
     padding: 5rem;
-    bottom: 10%;
     background-color: var(--cor-de-fundo);
     border-radius: 0.6rem;
     box-shadow: 0 0 2rem #000000;
@@ -137,7 +138,7 @@ body {
     background: url('../images/empresa-seguranca.jpg') no-repeat center center/cover;
 }
 
-.pagina-recuperar .fundo-overlay {
+.pagina-cadastro .fundo-overlay {
     content: "";
     position: absolute;
     top: 0;
@@ -146,91 +147,137 @@ body {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.644);
     z-index: 1;
-    border-radius: 0.63rem;
+    border-radius: 0.625rem;
 }
 
-.pagina-recuperar form button {
-    width: 20%;
-    padding: 1%;
-    margin: 3% 0 0.9% 0;
-    color: var(--cor-branca);
-    border: none;
-    cursor: pointer;
-    border-radius: 0.31rem;
-    border: 0.06rem solid #A3C1D3;
-    background-color: var(--cor-do-rodape);
-}
-
-.pagina-recuperar form button:hover {
-    background-color: black;
-}
-
-.subtitulo-recuperar {
-    color: var(--cor-branca);
+.subtitulo-cadastro {
     font-family: var(--fonte-primaria);
     padding: 0;
     font-size: 2rem;
     margin: 0 0 5% 0;
-    z-index: 1;
 }
 
-.pagina-recuperar form input {
+.pagina-cadastro form input {
     max-width: 37.5rem;
     width: 50%;
     padding: 0.6rem;
     margin-top: 0.5rem;
     box-sizing: border-box;
     border: 0.06rem solid #A3C1D3;
-    border-radius: 0.31rem;
+    border-radius: 0.3125rem;
     background-color: var(--cor-do-rodape);
     color: var(--cor-branca);
 }
 
 .label-texto {
-    color: var(--cor-branca);
     font-family: var(--fonte-secundaria);
     padding: 0.2%;
     max-width: 25rem;
     text-align: center;
     align-items: center;
     margin: 0 29%;
-    font-size: 1.25rem;
 }
 
-.rodape-recuperar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: var(--cor-do-rodape);
-    padding: 1%;
+.opcoes-cadastro {
+  display: flex;
+  align-items: center;
+  width: 27.5%;
+  margin: 0.5rem 4rem 1rem 0;
+}
+
+.opcoes-cadastro input[type="checkbox"] {
+  margin: 0;
+  padding: 5%;
+}
+
+.label-cadastro {
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-branca);
+  font-size: 0.95rem;
+  margin: 0;
+  width: 100%;
+}
+
+#mensagem-feedback {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mensagem-feedback.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#mensagem-feedback.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.botoes-form {
     width: 100%;
-    box-sizing: border-box;
-    color: var(--cor-branca);
-    font-size: 0.88rem;
+    font-size: 1.1rem;
+    margin: -3% 0 5% 0;
 }
 
-.rodape-texto {
-    font-family: var(--fonte-secundaria);
+.div_link-cadastro{
+    padding: 3% 0 0 0;
 }
 
-.link-recuperar {
-    text-align: right;
-    margin: 0.63rem 0 0.94rem;
-    color: var(--cor-branca);
+.link-cadastro {
     text-decoration: none;
-    font-size: 1.13rem;
+    color: var(--cor-branca);
+    font-family: var(--fonte-secundaria);
+    margin-top: 5% 0 0 0;
+}
+
+.link-cadastro:hover {
+    color: cyan;
     transition: color 0.3s ease;
 }
 
-.link-recuperar:hover {
-    color: cyan;
-    text-decoration: underline;
+.barra-span {
+    color: white;
 }
 
-.rodape-recuperar {
+.pagina-cadastro h2 {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: var(--cor-branca);
+}
+
+.pagina-cadastro form label {
+    display: block;
+    margin-top: 0.625rem;
+    color: var(--cor-branca);
+}
+
+.pagina-cadastro form button {
+    width: 20%;
+    padding: 1%;
+    margin: 3% 0 0.5% 0;
+    color: var(--cor-branca);
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    border: 0.06rem solid #A3C1D3;
+    background-color: var(--cor-do-rodape);
+}
+
+.pagina-cadastro form button:hover {
+    background-color: black;
+}
+
+.rodape-cadastro {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,3 +292,4 @@ body {
 .rodape-texto {
     font-family: var(--fonte-secundaria);
 }
+

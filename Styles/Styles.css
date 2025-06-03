@@ -92,8 +92,8 @@ form button:hover {
 }
 
 .divisor-diagonal {
-    margin: 0 50%;
-    width: 50%;
+    margin: 0 52%;
+    width: 40%;
     height: 0.125rem;
     background-color: var(--cor-de-fundo);
     position: static;
@@ -380,7 +380,7 @@ section {
 
 .link-cameras {
     display: inline-block;
-    background-color: var(--cor-do-rodape); /* Cor consistente com botões */
+    background-color: var(--cor-do-rodape); 
     padding: 0.625rem 0.625rem;
     border-radius: 0.4375rem;
 }
@@ -472,7 +472,7 @@ section {
 
 .link-sistemas {
     display: inline-block;
-    background-color: var(--cor-do-rodape); /* Cor consistente com botões */
+    background-color: var(--cor-do-rodape); 
     padding: 0.625rem 0.625rem;
     border-radius: 0.4375rem;
 }
@@ -507,8 +507,6 @@ section img {
     padding: 0.3125rem;
     background-color: var(--cor-branca);
 }
-
-/* Estiliza o footer */
 
 .rodape-index {
     display: flex;

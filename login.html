@@ -10,11 +10,11 @@
       <header class="cabecalho-principal">
         <div class="container">
             <div class="logo-empresa">
-                <a href="index.html"><img src="images/logo.png" alt="Imagem do Logo"></a>
+                <a href="index.php"><img src="images/logo.png" alt="Imagem do Logo"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="alarmes.html">Alarmes</a></li>
                     <li><a href="cameras.html">Câmeras</a></li>
                     <li><a href="sistemas.html">Sistemas</a></li>
@@ -31,7 +31,7 @@
         <div class="pagina-login">
             <div class="fundo-overlay"></div>
             <div class="conteudo-formulario">
-                <form class="formulario">
+                <form class="formulario" method="POST">
                     <h2 class="subtitulo-login">Login</h2>
                     <label class="label-texto" for="usuario">Usuário</label>
                     <input class="input-login" type="text" id="usuario" name="usuario" required>
@@ -41,9 +41,10 @@
                         <input type="checkbox" id="manter-conectado" name="manter-conectado" value="sim">
                         <label for="manter-conectado" class="label-manter-conectado">Manter-me conectado</label>
                       </div>
-                    <button onclick="entrar()" type="submit">Entrar</button>
-                    <div class="botoes-form">
-                      <a class="link-esqueci-senha" href="recuperar-senha.html">Esqueci minha senha</a>
+                      <div class="botoes-form">
+                      <button type="submit">Entrar</button>
+                    <div class="div_link-esqueci-senha">
+                      <a class="link-esqueci-senha" href="recuperar_senha.html">Esqueci minha senha</a>
                       <span class="barra-span">|</span>
                       <a class="link-esqueci-senha" href="cadastro.html">Criar minha conta</a>
                     </div>      
@@ -57,6 +58,6 @@
       <p class="rodape-texto">© 2024 ProtecGuard. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="app.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>
