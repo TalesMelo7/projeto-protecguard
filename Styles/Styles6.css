@@ -88,21 +88,17 @@ body {
     border-radius: 0.3125rem;
 }
 
-.rodape-login {
+.rodape {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--cor-do-rodape);
-    padding: 1%;
-    height: 3.75rem;
+    padding: 1rem;
     width: 100%;
     box-sizing: border-box;
     color: var(--cor-branca);
     font-size: 0.875rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
+    flex-shrink: 0;
 }
 
 .rodape-texto {
