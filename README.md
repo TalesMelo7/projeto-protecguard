@@ -3,11 +3,14 @@ ___
 
 O projeto foi realizado utilizando HTML e CSS para estruturar e estilizar a página e JavaScript para gerar interações e aproximação do usuário
 
-A interface é composta por um menu...
+A interface é composta por um menu, o backend sendo o banco de dados em PHP
 
 ## 🧾 Funcionalidades:
 
-- **??**
+- **Solicitação de orçamento para diversas funções**
+- **Cadastro de usuário**
+- **É possível visualizar todas as informações e características entre as três funcionalidades do Protectguard: Sistemas, câmeras, alarmes**
+- **Opção para recuperação de senha caso seja necessário**
 
 ## 🧱 Tecnologias Utilizadas:
 
